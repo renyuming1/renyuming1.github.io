@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HyG</title>
+    <title>Yuming Ren</title>
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Jul 2017 10:21:16 -0700</pubDate>
-    <lastBuildDate>Sat, 29 Jul 2017 10:21:16 -0700</lastBuildDate>
+    <pubDate>Sat, 29 Jul 2017 17:59:52 -0700</pubDate>
+    <lastBuildDate>Sat, 29 Jul 2017 17:59:52 -0700</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>JavaScript Scope作用域</title>
+        <description>Javascript作用域学习笔记</description>
+        <pubDate>Sat, 29 Jul 2017 10:51:54 -0700</pubDate>
+        <link>http://localhost:4000/2017/07/29/JavaScript-scoop/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/29/JavaScript-scoop/</guid>
+        
+        <category>JavaScript</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>前端如何写一个精确的倒计时</title>
@@ -258,37 +272,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>对这个 jekyll 博客主题的改版和重构</title>
-        <description>
-本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对&lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt;也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时&lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt;如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。
-
-主要想做这些事情有：添加归档，添加标签，添加分类页面，主页显示文章摘要，代码去除 jQuery 和 BootStrap，优化移动端显示，将所有变量写入配置文件&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;中等。再优化一些细节吧。希望更多人会喜欢。
-
-</description>
-        <pubDate>Fri, 11 Mar 2016 19:40:18 -0800</pubDate>
-        <link>http://localhost:4000/2016/03/11/jekyll-theme-version-2.0/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/03/11/jekyll-theme-version-2.0/</guid>
-        
-        <category>jekyll</category>
-        
-        <category>端口</category>
-        
-        <category>markdown</category>
-        
-        <category>Foxit</category>
-        
-        <category>RubyGems</category>
-        
-        <category>HTML</category>
-        
-        <category>CSS</category>
-        
-        
-        <category>jekyll</category>
         
       </item>
     

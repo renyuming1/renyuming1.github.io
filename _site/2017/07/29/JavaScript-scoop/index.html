@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Teach Girlfriend to make a Web Pages like Zhihu</title>
-    <meta name="description" content="My girlfriend is learning html and css recently. I told her to follow the video. Here, I recommend a video in Chinese that suite for fresh learners. The name...">
+    <title>JavaScript Scope作用域</title>
+    <meta name="description" content="Javascript作用域学习笔记">
 
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
-    <link rel="canonical" href="http://localhost:4000/2015/03/21/teach-girlfriend-html-css/">
+    <link rel="canonical" href="http://localhost:4000/2017/07/29/JavaScript-scoop/">
     <link rel="alternate" type="application/rss+xml" title="Yuming Ren" href="http://localhost:4000/feed.xml ">
 
 
@@ -43,6 +43,18 @@
     </script>
 
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
+    "HTML-CSS": {
+      linebreaks: { automatic: true, width: "container" }
+    }
+});
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 </head>
 
@@ -149,11 +161,11 @@
 
         <div class="page clearfix" post>
     <div class="left">
-        <h1>Teach Girlfriend to make a Web Pages like Zhihu</h1>
+        <h1>JavaScript Scope作用域</h1>
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>2015-03-21
+                <i class="fa fa-calendar"></i>2017-07-29
             </div>
 
             <div class="label-card">
@@ -173,7 +185,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#Bootstrap" title="Category: Bootstrap" rel="category">Bootstrap</a>
+        <a href="/category/#JavaScript" title="Category: JavaScript" rel="category">JavaScript</a>
     
   
 
@@ -190,17 +202,8 @@
   <i class="fa fa-tags"></i>
   
     
-        <!--a href="/tag/#BootStrap" title="Tag: BootStrap" rel="tag">BootStrap</a-->
-        <a href="/tag/#BootStrap" title="Tag: BootStrap" rel="tag">BootStrap</a>&nbsp;
-    
-        <!--a href="/tag/#HTML" title="Tag: HTML" rel="tag">HTML</a-->
-        <a href="/tag/#HTML" title="Tag: HTML" rel="tag">HTML</a>&nbsp;
-    
-        <!--a href="/tag/#CSS" title="Tag: CSS" rel="tag">CSS</a-->
-        <a href="/tag/#CSS" title="Tag: CSS" rel="tag">CSS</a>&nbsp;
-    
-        <!--a href="/tag/#Zhihu" title="Tag: Zhihu" rel="tag">Zhihu</a-->
-        <a href="/tag/#Zhihu" title="Tag: Zhihu" rel="tag">Zhihu</a>
+        <!--a href="/tag/#JavaScript" title="Tag: JavaScript" rel="tag">JavaScript</a-->
+        <a href="/tag/#JavaScript" title="Tag: JavaScript" rel="tag">JavaScript</a>
     
   
 
@@ -211,32 +214,11 @@
         </div>
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
-        
-<p>My girlfriend is learning html and css recently. I told her to follow the video. Here, I recommend a video in Chinese that suite for fresh learners. The name of course is Getting HTML web pages dev in 8 hours ( 8小时学会HTML网页开发 ) . I watched this video at very first time. The teacher named Eighteen Swallows ( 燕十八 ) . He teached very clear even himself being on screen to show what is float or box-model.</p>
+        <p>JavaScript 代码块语法貌似支持block scope， 实际上并不支持。
+JavaScript有Function Scope，意味着定义在函数中的参数和变量在函数外部是不可见的，而在一个函数内部可见。
+JavaScript推荐在函数体的顶部声明函数中可能用到的所有变量。
+JavaScript特殊的作用域定义还带来了一个好处，闭包（Closure）。</p>
 
-<!-- ![燕十八](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-18swallows.png) -->
-
-<p>Here is the site of the free online video.
-<a href="http://study.163.com/course/courseMain.htm?courseId=432008">http://study.163.com/course/courseMain.htm?courseId=432008</a></p>
-
-<p>I did the detailed note about this course. You can read here: <a href="http://wenku.baidu.com/view/aa136099f90f76c660371a35">http://wenku.baidu.com/view/aa136099f90f76c660371a35</a></p>
-
-<p>Now I’ll tell something happend today. She has watched the video above, and knows a little on BootStrap. So she wants to do some pages with BootStrap.</p>
-
-<p>We determined to copy the pages on <a href="http://zhihu.com">Zhihu</a> <br />
-Like this: <br />
-<img src="http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-zhihu.jpg" alt="知乎zhihu" /></p>
-
-<p>I teached her <a href="http://www.bootcss.com/">Boostrap</a> this afternoon. She has already got to read the docs and can code simple statics pages.</p>
-
-<p>She seems to enjoy Web Pages Design. Though she used to be a Graphic Designer. And now, she really works hard.</p>
-
-<p>At last I’ll show the works that we did together in 2 hours. It’s unfinished. I guess she will do it later. It’s a nice weekend, isn’t it?</p>
-
-<p><a href="http://gaohaoyang.github.io/test/bootstrap-zhihu/">to see Copy Zhihu, click here</a></p>
-
-<p>screenshot of copy Zhihu:
-<img src="http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-CopyZhihu.jpg" alt="Copy Zhihu" /></p>
 
         </article>
         <hr>
@@ -248,9 +230,62 @@ Like this: <br />
                 
                     
                 
-                    
+            
                 
                     
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/2016/11/25/how-to-write-a-count-down/">前端如何写一个精确的倒计时
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="/2016/11/22/js-create-file-and-download/">使用 JavaScript 创建并下载文件
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
                 
                     
                 
@@ -261,19 +296,11 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -284,9 +311,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -294,19 +319,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
@@ -317,9 +330,23 @@ Like this: <br />
                 
                     
                 
-                    
+            
                 
                     
+                        
+                        <li class="relatedPost">
+                            <a href="/2016/06/10/JavaScript-good-parts-note3/">JavaScript 语言精粹笔记3-方法、毒瘤等
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
                 
                     
                 
@@ -327,9 +354,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -337,19 +362,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
@@ -360,9 +373,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -370,9 +381,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -380,9 +389,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -393,39 +400,11 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
@@ -436,9 +415,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -446,22 +423,7 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-        
-            
-            
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
@@ -469,152 +431,28 @@ Like this: <br />
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
             
         
-            
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
         
-            
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-        
+            </ul>
         
 
         <div class="post-recent">
     <div class="pre">
         
-        <p><strong>上一篇</strong> <a href="/2015/02/15/create-my-blog-with-jekyll/">Jekyll 搭建静态博客</a></p>
+        <p><strong>上一篇</strong> <a href="/2016/11/25/how-to-write-a-count-down/">前端如何写一个精确的倒计时</a></p>
         
     </div>
     <div class="nex">
 
-        
-        <p><strong>下一篇</strong> <a href="/2015/03/26/sublimeLinter/">代码校验工具 SublimeLinter 的安装与使用</a></p>
         
     </div>
 </div>
@@ -632,8 +470,8 @@ Like this: <br />
      */
 
     var disqus_config = function() {
-        this.page.url = 'http://localhost:4000/2015/03/21/teach-girlfriend-html-css/'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://localhost:4000/2015/03/21/teach-girlfriend-html-css/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://localhost:4000/2017/07/29/JavaScript-scoop/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/2017/07/29/JavaScript-scoop/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -662,6 +500,8 @@ Like this: <br />
                     Content
                 </div>
                 <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
                     
                     <li><a href="#comments">Comments</a></li>
                 </ul>
