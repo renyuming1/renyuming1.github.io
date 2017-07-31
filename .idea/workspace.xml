@@ -2,10 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c116949c-9e74-4827-897a-3d5880f797e8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/02/10/welcome-to-jekyll/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/02/15/create-my-blog-with-jekyll/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/03/21/teach-girlfriend-html-css/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/03/26/sublimeLinter/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/04/06/arrays-similar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/04/12/Syncing-a-fork/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/04/15/baidu-ife-1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/04/22/baidu-ife-2-javascript/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/05/18/front-end-tools/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/05/20/scope/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/06/01/lenovo-front-end-interview/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/06/11/JavaScript-function/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/06/12/JavaScript-this/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/06/14/JavaScript-closure/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/06/15/JavaScript-Object-Oriented/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/06/17/web-app/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/06/17/weinre/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/07/08/JavaScript-Net/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/07/23/low-IE-click-empty-block-bug/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2015/12/31/History-API/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/03/11/jekyll-theme-version-2.0/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/05/05/regular-expression-group/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/06/07/JavaScript-good-parts-note1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/06/08/JavaScript-good-parts-note2/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/06/10/JavaScript-good-parts-note3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/06/14/how-to-use-babel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/07/07/git-clone-not-master-branch/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/10/16/shuffle-algorithm/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/11/22/js-create-file-and-download/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2016/11/25/how-to-write-a-count-down/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2017/07/29/JavaScript-scoop/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/2017/07/30/Markdown-Learnnote/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/README-zh-cn.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/about/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/archive/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/category/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/collection/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/feed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/js/masonry.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/js/pageContent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/js/smooth-scroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/js/waterfall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/page2/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/page3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/page4/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/page5/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/page6/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/_site/tag/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/favicon.ico" afterPath="$PROJECT_DIR$/_site/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/02/10/welcome-to-jekyll/index.html" afterPath="$PROJECT_DIR$/_site/2015/02/10/welcome-to-jekyll/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/02/15/create-my-blog-with-jekyll/index.html" afterPath="$PROJECT_DIR$/_site/2015/02/15/create-my-blog-with-jekyll/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/03/21/teach-girlfriend-html-css/index.html" afterPath="$PROJECT_DIR$/_site/2015/03/21/teach-girlfriend-html-css/index.html" />
@@ -37,8 +91,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/11/22/js-create-file-and-download/index.html" afterPath="$PROJECT_DIR$/_site/2016/11/22/js-create-file-and-download/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/11/25/how-to-write-a-count-down/index.html" afterPath="$PROJECT_DIR$/_site/2016/11/25/how-to-write-a-count-down/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2017/07/29/JavaScript-scoop/index.html" afterPath="$PROJECT_DIR$/_site/2017/07/29/JavaScript-scoop/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2017/07/30/Markdown-Learnnote/index.html" afterPath="$PROJECT_DIR$/_site/2017/07/30/Markdown-Learnnote/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/archive/index.html" afterPath="$PROJECT_DIR$/_site/archive/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/category/index.html" afterPath="$PROJECT_DIR$/_site/category/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/collection/index.html" afterPath="$PROJECT_DIR$/_site/collection/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/demo/index.html" afterPath="$PROJECT_DIR$/_site/demo/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/page2/index.html" afterPath="$PROJECT_DIR$/_site/page2/index.html" />
@@ -60,6 +118,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1528">
+              <caret line="280" column="21" lean-forward="false" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="21" />
+              <folding>
+                <marker date="1501522107000" expanded="true" signature="39511:39558" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="39511:39577" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="39596:39826" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="41196:41501" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="41385:41488" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="41647:41753" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="41679:41746" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="41919:42198" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="41945:42183" ph="{&quot;easing&quot;: 'easeInOutCubic'...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/tag/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="default.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,97 +158,109 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="17" selection-end-column="157" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feed.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feed.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4about.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/4about.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="615">
-                <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="218" column="21" lean-forward="true" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/tag/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README-zh-cn.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/_site/README-zh-cn.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="525">
-                <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-07-31-jekyII-change-favicon.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-07-31-jekyII-change-favicon.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_site/2016/06/08/JavaScript-good-parts-note2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1110">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-07-30-Markdown-Learnnote.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-07-30-Markdown-Learnnote.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/2016/05/05/regular-expression-group/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+              <folding>
+                <marker date="1501522107000" expanded="true" signature="12427:12916" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="12501:12703" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="12581:12673" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="12960:13299" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="12982:13121" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="13143:13292" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="13392:14305" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="13398:13662" ph="/** RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. ...*/" />
+                <marker date="1501522107000" expanded="true" signature="13699:14016" ph="{...}" />
+                <marker date="1501522107000" expanded="true" signature="14035:14292" ph="{...}" />
+                <marker date="1501522107000" expanded="true" signature="14557:15109" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="14584:15098" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="14653:15001" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="14675:14726" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="14784:14982" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="15125:15346" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="15127:15151" ph="/** target _blank ...*/" />
+                <marker date="1501522107000" expanded="true" signature="15164:15333" ph="{...}" />
+                <marker date="1501522107000" expanded="true" signature="15274:15331" ph="{...}" />
+                <marker date="1501522107000" expanded="true" signature="15441:16930" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="15469:16920" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="15502:15535" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="15563:16394" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="16406:16578" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="16604:16909" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="16623:16774" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="16793:16896" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="17055:17161" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="17087:17154" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="17327:17606" ph="..." />
+                <marker date="1501522107000" expanded="true" signature="17353:17591" ph="{&quot;easing&quot;: 'easeInOutCubic'...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="62" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -187,6 +287,7 @@
         <option value="$PROJECT_DIR$/_posts/2017-07-30-Markdown-Learnnote.md" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_posts/2017-07-31-jekyII-change-favicon.md" />
       </list>
     </option>
   </component>
@@ -287,6 +388,76 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renyuming1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renyuming1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renyuming1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renyuming1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renyuming1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renyuming1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="08" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScript-good-parts-note2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -467,12 +638,12 @@
       <option name="presentableId" value="Default" />
       <updated>1501348002833</updated>
       <workItem from="1501348004527" duration="627000" />
-      <workItem from="1501349134490" duration="10789000" />
+      <workItem from="1501349134490" duration="13614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11416000" />
+    <option name="totallyTimeSpent" value="14241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1385" y="-229" width="2423" height="1372" extended-state="0" />
@@ -508,22 +679,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -739,25 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-07-30-Markdown-Learnnote.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/feed.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -811,14 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -864,16 +992,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="218" column="21" lean-forward="true" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="1528">
+          <caret line="280" column="21" lean-forward="false" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="21" />
+          <folding>
+            <marker date="1501522107000" expanded="true" signature="39511:39558" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="39511:39577" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="39596:39826" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="41196:41501" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="41385:41488" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="41647:41753" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="41679:41746" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="41919:42198" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="41945:42183" ph="{&quot;easing&quot;: 'easeInOutCubic'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/tag/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -892,7 +1030,101 @@
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/2016/05/05/regular-expression-group/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <marker date="1501522107000" expanded="true" signature="12427:12916" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="12501:12703" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="12581:12673" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="12960:13299" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="12982:13121" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="13143:13292" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="13392:14305" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="13398:13662" ph="/** RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. ...*/" />
+            <marker date="1501522107000" expanded="true" signature="13699:14016" ph="{...}" />
+            <marker date="1501522107000" expanded="true" signature="14035:14292" ph="{...}" />
+            <marker date="1501522107000" expanded="true" signature="14557:15109" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="14584:15098" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="14653:15001" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="14675:14726" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="14784:14982" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="15125:15346" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="15127:15151" ph="/** target _blank ...*/" />
+            <marker date="1501522107000" expanded="true" signature="15164:15333" ph="{...}" />
+            <marker date="1501522107000" expanded="true" signature="15274:15331" ph="{...}" />
+            <marker date="1501522107000" expanded="true" signature="15441:16930" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="15469:16920" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="15502:15535" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="15563:16394" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="16406:16578" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="16604:16909" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="16623:16774" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="16793:16896" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="17055:17161" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="17087:17154" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="17327:17606" ph="..." />
+            <marker date="1501522107000" expanded="true" signature="17353:17591" ph="{&quot;easing&quot;: 'easeInOutCubic'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="62" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-07-30-Markdown-Learnnote.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-07-31-jekyII-change-favicon.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/2016/06/08/JavaScript-good-parts-note2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1110">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
