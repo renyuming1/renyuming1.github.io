@@ -7,6 +7,8 @@ tags: Markdown
 excerpt: Markdown 学习笔记，方便查找
 author: yuming
 ---
+* content
+{:toc}
 
 ## 简介
 Markdown 是一种书写的格式，目的是为了更容易读写更改。是具有电子邮件风格的标记语言。

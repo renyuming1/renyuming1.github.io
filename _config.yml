@@ -58,3 +58,10 @@ excerpt_separator: "\n\n\n\n"
 # paginate
 gems: [jekyll-paginate]
 paginate: 6
+
+# images
+defaults:
+  - scope:
+      path: "assets/image"
+    values:
+      image: true

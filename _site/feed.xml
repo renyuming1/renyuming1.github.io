@@ -5,9 +5,47 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 31 Jul 2017 10:28:23 -0700</pubDate>
-    <lastBuildDate>Mon, 31 Jul 2017 10:28:23 -0700</lastBuildDate>
+    <pubDate>Mon, 31 Jul 2017 23:22:43 -0700</pubDate>
+    <lastBuildDate>Mon, 31 Jul 2017 23:22:43 -0700</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>西雅图咖啡地图</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#西雅图咖啡地图待更新&quot; id=&quot;markdown-toc-西雅图咖啡地图待更新&quot;&gt;西雅图咖啡地图（待更新）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ref&quot; id=&quot;markdown-toc-ref&quot;&gt;ref&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;西雅图咖啡地图待更新&quot;&gt;西雅图咖啡地图（待更新）&lt;/h2&gt;
+
+&lt;img src=&quot;http://localhost:4000/assets/images/seattle_coffee_map.png&quot; alt=&quot;&quot; /&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;ref&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;[咖啡地图&lt;/td&gt;
+          &lt;td&gt;“咖啡”遇上西雅图，好喝夜未眠](https://zhuanlan.zhihu.com/p/27704877)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/35843431/answer/64699603&quot;&gt;品豆咖啡&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIyODE0OTIyOQ==&amp;amp;mid=2655551406&amp;amp;idx=1&amp;amp;sn=9d13a016ede721706761441c98f0396b&amp;amp;chksm=f3ea8d2cc49d043adabbf431c4e1ca172db0e18d3cf737f83e064e538d220f41235c786af851&amp;amp;scene=0&amp;amp;key=f2674fde6f8d5328280a48ef5d353286b0f35be14beb6f7b3ef9ccbabff6f13d6ee0f9727f701b21e90dbe528d4c891295fd44d580696b923942181155ddcfe449ae59ab5179d59bbc9eaeabc8e318e4&amp;amp;ascene=0&amp;amp;uin=MjAzNTYyNTk4MA%3D%3D&amp;amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.6+build(15G1611)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=OFWS5NzNq3Ixp1PKXULyd3bGPNmRXV%2Bv2E6e1hRa6GhTUlSAVQLiH5JuFJbBPuH3&quot;&gt;西雅图吃货小分队&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 31 Jul 2017 16:12:26 -0700</pubDate>
+        <link>http://localhost:4000/2017/07/31/seattle-coffee/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/31/seattle-coffee/</guid>
+        
+        <category>杂记</category>
+        
+        
+        <category>杂记</category>
+        
+      </item>
     
       <item>
         <title>Jekyll 更换favicon</title>
@@ -211,31 +249,6 @@
         <category>函数</category>
         
         <category>JavaScript</category>
-        
-        
-        <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>JavaScript 语言精粹笔记2-继承、数组、正则表达式</title>
-        <description>
-记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。
-
-</description>
-        <pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/06/08/JavaScript-good-parts-note2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/06/08/JavaScript-good-parts-note2/</guid>
-        
-        <category>继承</category>
-        
-        <category>对象</category>
-        
-        <category>原型</category>
-        
-        <category>Array</category>
-        
-        <category>正则</category>
         
         
         <category>JavaScript</category>

@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>在低版本 IE 中点击空 block 元素的问题</title>
-    <meta name="description" content="  问题描述问题描述当我们点击一个空的、没有任何内容的 div 或者其他块级元素时。在 IE11 以下，是没有反应的。">
+    <title>西雅图咖啡地图</title>
+    <meta name="description" content="  西雅图咖啡地图（待更新）  ref西雅图咖啡地图（待更新）ref                              [咖啡地图          “咖啡”遇上西雅图，好喝夜未眠](https://zhuanlan.zhihu.com/p/27704877)                      品...">
 
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
-    <link rel="canonical" href="http://localhost:4000/2015/07/23/low-IE-click-empty-block-bug/">
+    <link rel="canonical" href="http://localhost:4000/2017/07/31/seattle-coffee/">
     <link rel="alternate" type="application/rss+xml" title="Yuming Ren" href="http://localhost:4000/feed.xml ">
 
 
@@ -149,14 +149,15 @@
 
         <div class="page clearfix" post>
     <div class="left">
-        <h1>在低版本 IE 中点击空 block 元素的问题</h1>
+        <h1>西雅图咖啡地图</h1>
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>2015-07-23
+                <i class="fa fa-calendar"></i>2017-07-31
             </div>
 
             <div class="label-card">
+                <i class="fa fa-user"></i>yuming
                 
             </div>
 
@@ -173,7 +174,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#CSS" title="Category: CSS" rel="category">CSS</a>
+        <a href="/category/#杂记" title="Category: 杂记" rel="category">杂记</a>
     
   
 
@@ -190,17 +191,8 @@
   <i class="fa fa-tags"></i>
   
     
-        <!--a href="/tag/#IE" title="Tag: IE" rel="tag">IE</a-->
-        <a href="/tag/#IE" title="Tag: IE" rel="tag">IE</a>&nbsp;
-    
-        <!--a href="/tag/#CSS" title="Tag: CSS" rel="tag">CSS</a-->
-        <a href="/tag/#CSS" title="Tag: CSS" rel="tag">CSS</a>&nbsp;
-    
-        <!--a href="/tag/#%E5%85%BC%E5%AE%B9%E6%80%A7" title="Tag: 兼容性" rel="tag">兼容性</a-->
-        <a href="/tag/#兼容性" title="Tag: 兼容性" rel="tag">兼容性</a>&nbsp;
-    
-        <!--a href="/tag/#HTML" title="Tag: HTML" rel="tag">HTML</a-->
-        <a href="/tag/#HTML" title="Tag: HTML" rel="tag">HTML</a>
+        <!--a href="/tag/#%E6%9D%82%E8%AE%B0" title="Tag: 杂记" rel="tag">杂记</a-->
+        <a href="/tag/#杂记" title="Tag: 杂记" rel="tag">杂记</a>
     
   
 
@@ -212,30 +204,29 @@
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
         <ul id="markdown-toc">
-  <li><a href="#问题描述" id="markdown-toc-问题描述">问题描述</a></li>
-  <li><a href="#使用场景" id="markdown-toc-使用场景">使用场景</a></li>
-  <li><a href="#解决办法" id="markdown-toc-解决办法">解决办法</a></li>
+  <li><a href="#西雅图咖啡地图待更新" id="markdown-toc-西雅图咖啡地图待更新">西雅图咖啡地图（待更新）</a></li>
+  <li><a href="#ref" id="markdown-toc-ref">ref</a></li>
 </ul>
 
-<h2 id="问题描述">问题描述</h2>
+<h2 id="西雅图咖啡地图待更新">西雅图咖啡地图（待更新）</h2>
 
-<p>当我们点击一个空的、没有任何内容的 div 或者其他块级元素时。在 IE11 以下，是没有反应的。</p>
+<p><img src="http://localhost:4000/assets/images/seattle_coffee_map.png" alt="" /></p>
 
-<h2 id="使用场景">使用场景</h2>
-
-<p>这类问题使用场景还是很普遍的。比如 UI 给了一张大图，要点击图上的某一块位置的时候。可以用一个空的 div 定位到相应的位置，然后对它进行绑定事件。</p>
-
-<hr />
-
-<h2 id="解决办法">解决办法</h2>
-
-<p>解决方法很简单，即给这个块级元素填充任意颜色，然后将其透明度设置为0。代码如下：</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>background-color: #fff;
-opacity: 0;
-filter:alpha(opacity=0);
-</code></pre>
-</div>
+<h2 id="ref">ref</h2>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[咖啡地图</td>
+          <td>“咖啡”遇上西雅图，好喝夜未眠](https://zhuanlan.zhihu.com/p/27704877)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="https://www.zhihu.com/question/35843431/answer/64699603">品豆咖啡</a></li>
+  <li><a href="https://mp.weixin.qq.com/s?__biz=MzIyODE0OTIyOQ==&amp;mid=2655551406&amp;idx=1&amp;sn=9d13a016ede721706761441c98f0396b&amp;chksm=f3ea8d2cc49d043adabbf431c4e1ca172db0e18d3cf737f83e064e538d220f41235c786af851&amp;scene=0&amp;key=f2674fde6f8d5328280a48ef5d353286b0f35be14beb6f7b3ef9ccbabff6f13d6ee0f9727f701b21e90dbe528d4c891295fd44d580696b923942181155ddcfe449ae59ab5179d59bbc9eaeabc8e318e4&amp;ascene=0&amp;uin=MjAzNTYyNTk4MA%3D%3D&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.6+build(15G1611)&amp;version=12020810&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=OFWS5NzNq3Ixp1PKXULyd3bGPNmRXV%2Bv2E6e1hRa6GhTUlSAVQLiH5JuFJbBPuH3">西雅图吃货小分队</a></li>
+</ul>
 
         </article>
         <hr>
@@ -247,9 +238,10 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
-                
-                    
+            
+        
+            
+            
                 
                     
                 
@@ -260,9 +252,14 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
+            
+        
+            
+            
                 
                     
+                
+            
                 
                     
                 
@@ -273,9 +270,11 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
+            
                 
                     
+                
+            
                 
                     
                 
@@ -286,9 +285,15 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
+            
                 
                     
+                
+            
+                
+                    
+                
+            
                 
                     
                 
@@ -299,19 +304,11 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -322,9 +319,7 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -332,19 +327,7 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
@@ -355,39 +338,7 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
@@ -398,9 +349,7 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
-                
-                    
+            
                 
                     
                 
@@ -408,85 +357,11 @@ filter:alpha(opacity=0);
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
-        
-            
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-        
-            
-            
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
                 
                     
                 
@@ -497,13 +372,11 @@ filter:alpha(opacity=0);
         <div class="post-recent">
     <div class="pre">
         
-        <p><strong>上一篇</strong> <a href="/2015/07/08/JavaScript-Net/">JavaScript 阶段总结</a></p>
+        <p><strong>上一篇</strong> <a href="/2017/07/31/jekyII-change-favicon/">Jekyll 更换favicon</a></p>
         
     </div>
     <div class="nex">
 
-        
-        <p><strong>下一篇</strong> <a href="/2015/12/31/History-API/">前端处理动态 url 和 pushStatus 的使用</a></p>
         
     </div>
 </div>
@@ -521,8 +394,8 @@ filter:alpha(opacity=0);
      */
 
     var disqus_config = function() {
-        this.page.url = 'http://localhost:4000/2015/07/23/low-IE-click-empty-block-bug/'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://localhost:4000/2015/07/23/low-IE-click-empty-block-bug/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://localhost:4000/2017/07/31/seattle-coffee/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/2017/07/31/seattle-coffee/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 
     (function() { // DON'T EDIT BELOW THIS LINE

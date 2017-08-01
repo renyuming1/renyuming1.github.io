@@ -7,9 +7,15 @@ tags: jekyll
 excerpt: Jekyll 学习笔记，方便查找
 author: yuming
 ---
+
+* content
+{:toc}
+
 ## 简介
 >Favicon是favorites icon的缩写，是与某个网站或者网页相关联的图标，主要的实现方法是用HTML为任何一个网页指示其图标所存储的位置。这种方法是通过在页面的<head>部分添加两个link元件来实现的。这样，任何一个适当大小的（16×16像素或更大）的图像都可以用作favicon。尽管如此，多数情况下仍然使用ICO格式。其他网页浏览器现在也支持PNG（便携式网络图片）格式，和GIF（图形交换格式）动画图像格式。
 >                    ---[Wiki](https://zh.wikipedia.org/wiki/Favicon)  
+
+![](https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/6/005/06e/31b/2cb05e2.jpg)
 
 ## 更换：
 
