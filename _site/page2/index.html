@@ -156,6 +156,161 @@
             
               <li>
                 <h2>
+                  <a class="post-link" href="/2016/11/25/how-to-write-a-count-down/">前端如何写一个精确的倒计时</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2016-11-25
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>HyG
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#JavaScript" title="Category: JavaScript" rel="category">JavaScript</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#countdown" title="Tag: countdown" rel="tag">countdown</a>&nbsp;
+    
+        <a href="/tag/#JavaScript" title="Tag: JavaScript" rel="tag">JavaScript</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>关于写倒计时大家可能都都比较熟悉，使用 setTimeout 或 setInterval 就可以搞定。几秒钟或者几分钟的倒计时这样写没有问题，但是如果是长时间的倒计时，这样写就会不准确。如果用户修改了他的设备时间，这样的倒计时就没有意义了。今天就说说写一个精确的倒计时的方法。</p>
+
+<p><img src="https://img.alicdn.com/tfs/TB18QnlOpXXXXcVXpXXXXXXXXXX-388-256.png" alt="" /></p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2016/11/25/how-to-write-a-count-down/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2016/11/22/js-create-file-and-download/">使用 JavaScript 创建并下载文件</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2016-11-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>HyG
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#JavaScript" title="Category: JavaScript" rel="category">JavaScript</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#文件" title="Tag: 文件" rel="tag">文件</a>&nbsp;
+    
+        <a href="/tag/#下载" title="Tag: 下载" rel="tag">下载</a>&nbsp;
+    
+        <a href="/tag/#JavaScript" title="Tag: JavaScript" rel="tag">JavaScript</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#先上代码" id="markdown-toc-先上代码">先上代码</a></li>
+</ul>
+
+<p>本文将介绍如何使用 JavaScript 创建文件，并自动/手动将文件下载。这在导出原始数据时会比较方便。</p>
+
+<h2 id="先上代码">先上代码</h2>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="cm">/**
+ * 创建并下载文件
+ * @param  {String} fileName 文件名
+ * @param  {String} content  文件内容
+ */</span>
+<span class="kd">function</span> <span class="nx">createAndDownloadFile</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">aTag</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">blob</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Blob</span><span class="p">([</span><span class="nx">content</span><span class="p">]);</span>
+    <span class="nx">aTag</span><span class="p">.</span><span class="nx">download</span> <span class="o">=</span> <span class="nx">fileName</span><span class="p">;</span>
+    <span class="nx">aTag</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">URL</span><span class="p">.</span><span class="nx">createObjectURL</span><span class="p">(</span><span class="nx">blob</span><span class="p">);</span>
+    <span class="nx">aTag</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+    <span class="nx">URL</span><span class="p">.</span><span class="nx">revokeObjectURL</span><span class="p">(</span><span class="nx">blob</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>很简单对吧，直接调用这个方法，传入文件名和文件内容，程序新建 a 标签，新建 Blob 对象，将文件名赋给 a 标签，同时将 Blob 对象作为 Url 也赋给 a 标签，模拟点击事件，自动下载成功，最后再回收内存。下面我们来看看具体是怎么操作的。</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2016/11/22/js-create-file-and-download/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
                   <a class="post-link" href="/2016/10/16/shuffle-algorithm/">Fisher–Yates shuffle 洗牌算法</a>
                 </h2>
                 <div class="label">
@@ -432,146 +587,6 @@
                 <hr>
               </li>
             
-              <li>
-                <h2>
-                  <a class="post-link" href="/2016/06/08/JavaScript-good-parts-note2/">JavaScript 语言精粹笔记2-继承、数组、正则表达式</a>
-                </h2>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>2016-06-08
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
-
-                    <div class="label-card">
-                    
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#JavaScript" title="Category: JavaScript" rel="category">JavaScript</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                    </div>
-
-                    <div class="label-card">
-                    
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#继承" title="Tag: 继承" rel="tag">继承</a>&nbsp;
-    
-        <a href="/tag/#对象" title="Tag: 对象" rel="tag">对象</a>&nbsp;
-    
-        <a href="/tag/#原型" title="Tag: 原型" rel="tag">原型</a>&nbsp;
-    
-        <a href="/tag/#Array" title="Tag: Array" rel="tag">Array</a>&nbsp;
-    
-        <a href="/tag/#正则" title="Tag: 正则" rel="tag">正则</a>
-    
-  
-
-</span>
-
-                    </div>
-                </div>
-                <div class="excerpt">
-                    
-<p>记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。</p>
-
-
-                </div>
-                <div class="read-all">
-                    <a  href="/2016/06/08/JavaScript-good-parts-note2/"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
-                <hr>
-              </li>
-            
-              <li>
-                <h2>
-                  <a class="post-link" href="/2016/06/07/JavaScript-good-parts-note1/">JavaScript 语言精粹笔记1-语法、对象、函数</a>
-                </h2>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>2016-06-07
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
-
-                    <div class="label-card">
-                    
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#JavaScript" title="Category: JavaScript" rel="category">JavaScript</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                    </div>
-
-                    <div class="label-card">
-                    
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#对象" title="Tag: 对象" rel="tag">对象</a>&nbsp;
-    
-        <a href="/tag/#函数" title="Tag: 函数" rel="tag">函数</a>&nbsp;
-    
-        <a href="/tag/#this" title="Tag: this" rel="tag">this</a>&nbsp;
-    
-        <a href="/tag/#闭包" title="Tag: 闭包" rel="tag">闭包</a>&nbsp;
-    
-        <a href="/tag/#面向对象" title="Tag: 面向对象" rel="tag">面向对象</a>&nbsp;
-    
-        <a href="/tag/#作用域" title="Tag: 作用域" rel="tag">作用域</a>
-    
-  
-
-</span>
-
-                    </div>
-                </div>
-                <div class="excerpt">
-                    
-<p>记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。</p>
-
-
-                </div>
-                <div class="read-all">
-                    <a  href="/2016/06/07/JavaScript-good-parts-note1/"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
-                <hr>
-              </li>
-            
         </ul>
 
 
@@ -599,6 +614,10 @@
                 </div>
                 <ul class="content-ul" recent>
                     
+                        <li><a href="/2017/08/02/jsvascript-notes-1/">Javascript高级程序设计笔记</a></li>
+                    
+                        <li><a href="/2017/08/01/sublime-text-3-syntax/">Sublime Text 3 工具简介</a></li>
+                    
                         <li><a href="/2017/07/31/seattle-coffee/">西雅图咖啡地图</a></li>
                     
                         <li><a href="/2017/07/31/jekyII-change-favicon/">Jekyll 更换favicon</a></li>
@@ -614,10 +633,6 @@
                         <li><a href="/2016/10/16/shuffle-algorithm/">Fisher–Yates shuffle 洗牌算法</a></li>
                     
                         <li><a href="/2016/07/07/git-clone-not-master-branch/">Git 如何 clone 非 master 分支的代码</a></li>
-                    
-                        <li><a href="/2016/06/14/how-to-use-babel/">如何使用 babel</a></li>
-                    
-                        <li><a href="/2016/06/10/JavaScript-good-parts-note3/">JavaScript 语言精粹笔记3-方法、毒瘤等</a></li>
                     
                 </ul>
             </div>
@@ -653,7 +668,7 @@
                             <span class="name">
                                 Sublime
                             </span>
-                            <span class="badge">1</span>
+                            <span class="badge">2</span>
                         </a>
                     </li>
                     
@@ -662,7 +677,7 @@
                             <span class="name">
                                 JavaScript
                             </span>
-                            <span class="badge">20</span>
+                            <span class="badge">21</span>
                         </a>
                     </li>
                     
@@ -793,7 +808,7 @@
                       
                       
                       
-                      <a href="/tag/#Sublime" style="font-size: 9pt; color: #999;">Sublime</a>
+                      <a href="/tag/#Sublime" style="font-size: 9.5pt; color: #888;">Sublime</a>
                     
                       
                       
@@ -1249,6 +1264,20 @@
                       
                       
                       <a href="/tag/#杂记" style="font-size: 9pt; color: #999;">杂记</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tools" style="font-size: 9pt; color: #999;">Tools</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Javascript" style="font-size: 9pt; color: #999;">Javascript</a>
                     
                 </div>
             </div>

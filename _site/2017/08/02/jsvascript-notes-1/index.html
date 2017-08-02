@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>西雅图咖啡地图</title>
-    <meta name="description" content="  西雅图咖啡地图（待更新）  ref西雅图咖啡地图（待更新）ref  咖啡地图 “咖啡”遇上西雅图，好喝夜未眠  品豆咖啡  西雅图吃货小分队">
+    <title>Javascript高级程序设计笔记</title>
+    <meta name="description" content="">
 
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
-    <link rel="canonical" href="http://localhost:4000/2017/07/31/seattle-coffee/">
+    <link rel="canonical" href="http://localhost:4000/2017/08/02/jsvascript-notes-1/">
     <link rel="alternate" type="application/rss+xml" title="Yuming Ren" href="http://localhost:4000/feed.xml ">
 
 
@@ -149,11 +149,11 @@
 
         <div class="page clearfix" post>
     <div class="left">
-        <h1>西雅图咖啡地图</h1>
+        <h1>Javascript高级程序设计笔记</h1>
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>2017-07-31
+                <i class="fa fa-calendar"></i>2017-08-02
             </div>
 
             <div class="label-card">
@@ -174,7 +174,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#杂记" title="Category: 杂记" rel="category">杂记</a>
+        <a href="/category/#JavaScript" title="Category: JavaScript" rel="category">JavaScript</a>
     
   
 
@@ -191,8 +191,8 @@
   <i class="fa fa-tags"></i>
   
     
-        <!--a href="/tag/#%E6%9D%82%E8%AE%B0" title="Tag: 杂记" rel="tag">杂记</a-->
-        <a href="/tag/#杂记" title="Tag: 杂记" rel="tag">杂记</a>
+        <!--a href="/tag/#Javascript" title="Tag: Javascript" rel="tag">Javascript</a-->
+        <a href="/tag/#Javascript" title="Tag: Javascript" rel="tag">Javascript</a>
     
   
 
@@ -204,20 +204,62 @@
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
         <ul id="markdown-toc">
-  <li><a href="#西雅图咖啡地图待更新" id="markdown-toc-西雅图咖啡地图待更新">西雅图咖啡地图（待更新）</a></li>
-  <li><a href="#ref" id="markdown-toc-ref">ref</a></li>
+  <li><a href="#html-in-javascript" id="markdown-toc-html-in-javascript">HTML in Javascript</a>    <ul>
+      <li><a href="#script" id="markdown-toc-script">&lt;script&gt;</a></li>
+      <li><a href="#external-js-source-vs-embedded-js-code" id="markdown-toc-external-js-source-vs-embedded-js-code">external js source vs embedded js code</a></li>
+    </ul>
+  </li>
 </ul>
 
-<h2 id="西雅图咖啡地图待更新">西雅图咖啡地图（待更新）</h2>
+<h2 id="html-in-javascript">HTML in Javascript</h2>
 
-<p><img src="/assets/images/seattle_coffee_map.png" alt="" class="img-responsive" /></p>
+<h3 id="script">&lt;script&gt;</h3>
+<p>script属性：</p>
+<ol>
+  <li>async: 表示立即下载脚本，但不妨碍页面其他操作，只对外部脚本有效。 
+example：
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">async</span> <span class="na">src=</span><span class="s">"example1.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">async</span> <span class="na">src=</span><span class="s">"example2.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+    </div>
+    <p>理论上讲，example1.js与example2.js异步加载，所以不存在顺序。确保相互之间互不依赖。建议不要在加载期间修改DOM。
+异步脚步会在页面load event前执行。</p>
+  </li>
+  <li>charset: 通过src属性指定的代码的字符集。</li>
+  <li>defer：与async相对，也是控制解析script的时间，只对外部脚本有效。
+example：
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">defer =</span><span class="err"> </span><span class="s">"defer"</span> <span class="na">src=</span><span class="s">"example1.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">defer =</span><span class="err"> </span><span class="s">"defer"</span> <span class="na">src=</span><span class="s">"example2.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+    </div>
+    <blockquote>
+      <p>注：最好只包含一个延迟脚本，理论上讲，example1.js会先于example2.js被执行。但是现实中，延迟脚本不一定按照顺序执行，比如我们并不知道example1.js还是example2.js谁会先被load.</p>
+    </blockquote>
+  </li>
+  <li>language: replaced by type</li>
+  <li>type: 表示编写代码用的脚本语言的内容类型(MIME类型)。常用的MIME类型诸如<code class="highlighter-rouge">text/javascript</code>, <code class="highlighter-rouge">text/ecmascript</code>。服务器在传送JS文件时用的MIME类型通常为<code class="highlighter-rouge">application/x-javascript</code>，但是在type中设置可能导致脚本被忽略。</li>
+  <li>src: 包含执行代码的外部文件。如果要包含外部Javascript文件，src是必须的
+Example:
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src =</span><span class="err"> </span><span class="s">'example.js'</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+    </div>
+    <blockquote>
+      <p>注：外部文件与解析嵌入式Javascript一样，解析外部文件时，页面处理会暂停。</p>
+    </blockquote>
 
-<h2 id="ref">ref</h2>
+    <blockquote>
+      <p>注：带有src属性的<code class="highlighter-rouge">&lt;scipt&gt;</code>元素不应在其<code class="highlighter-rouge">&lt;scipt&gt;</code>与<code class="highlighter-rouge">&lt;/scipt&gt;</code>间包含JS代码，不然嵌入的代码会被忽略</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="external-js-source-vs-embedded-js-code">external js source vs embedded js code</h3>
 <ul>
-  <li><a href="https://zhuanlan.zhihu.com/p/27704877">咖啡地图 “咖啡”遇上西雅图，好喝夜未眠</a></li>
-  <li><a href="https://www.zhihu.com/question/35843431/answer/64699603">品豆咖啡</a></li>
-  <li><a href="https://mp.weixin.qq.com/s?__biz=MzIyODE0OTIyOQ==&amp;mid=2655551406&amp;idx=1&amp;sn=9d13a016ede721706761441c98f0396b&amp;chksm=f3ea8d2cc49d043adabbf431c4e1ca172db0e18d3cf737f83e064e538d220f41235c786af851&amp;scene=0&amp;key=f2674fde6f8d5328280a48ef5d353286b0f35be14beb6f7b3ef9ccbabff6f13d6ee0f9727f701b21e90dbe528d4c891295fd44d580696b923942181155ddcfe449ae59ab5179d59bbc9eaeabc8e318e4&amp;ascene=0&amp;uin=MjAzNTYyNTk4MA%3D%3D&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.6+build(15G1611)&amp;version=12020810&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=OFWS5NzNq3Ixp1PKXULyd3bGPNmRXV%2Bv2E6e1hRa6GhTUlSAVQLiH5JuFJbBPuH3">西雅图吃货小分队</a></li>
+  <li>maintainable:</li>
+  <li>Cacheable: If both pages use same js file, will only need to load once.</li>
+  <li>For future: compatible with XHTML</li>
 </ul>
+
 
         </article>
         <hr>
@@ -230,12 +272,12 @@
                     
                 
             
-        
-            
-            
                 
                     
                 
+            
+        
+            
             
                 
                     
@@ -347,13 +389,11 @@
         <div class="post-recent">
     <div class="pre">
         
-        <p><strong>上一篇</strong> <a href="/2017/07/31/jekyII-change-favicon/">Jekyll 更换favicon</a></p>
+        <p><strong>上一篇</strong> <a href="/2017/08/01/sublime-text-3-syntax/">Sublime Text 3 工具简介</a></p>
         
     </div>
     <div class="nex">
 
-        
-        <p><strong>下一篇</strong> <a href="/2017/08/01/sublime-text-3-syntax/">Sublime Text 3 工具简介</a></p>
         
     </div>
 </div>
@@ -371,8 +411,8 @@
      */
 
     var disqus_config = function() {
-        this.page.url = 'http://localhost:4000/2017/07/31/seattle-coffee/'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://localhost:4000/2017/07/31/seattle-coffee/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://localhost:4000/2017/08/02/jsvascript-notes-1/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/2017/08/02/jsvascript-notes-1/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 
     (function() { // DON'T EDIT BELOW THIS LINE

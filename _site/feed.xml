@@ -5,9 +5,101 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 31 Jul 2017 23:22:43 -0700</pubDate>
-    <lastBuildDate>Mon, 31 Jul 2017 23:22:43 -0700</lastBuildDate>
+    <pubDate>Wed, 02 Aug 2017 15:18:40 -0700</pubDate>
+    <lastBuildDate>Wed, 02 Aug 2017 15:18:40 -0700</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Javascript高级程序设计笔记</title>
+        <description>
+</description>
+        <pubDate>Wed, 02 Aug 2017 06:12:26 -0700</pubDate>
+        <link>http://localhost:4000/2017/08/02/jsvascript-notes-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/02/jsvascript-notes-1/</guid>
+        
+        <category>Javascript</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
+    
+      <item>
+        <title>Sublime Text 3 工具简介</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#install&quot; id=&quot;markdown-toc-install&quot;&gt;Install&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#快捷键&quot; id=&quot;markdown-toc-快捷键&quot;&gt;快捷键&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#快速查找&quot; id=&quot;markdown-toc-快速查找&quot;&gt;快速查找&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#多行游标&quot; id=&quot;markdown-toc-多行游标&quot;&gt;多行游标&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#command-palette&quot; id=&quot;markdown-toc-command-palette&quot;&gt;command Palette&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ref&quot; id=&quot;markdown-toc-ref&quot;&gt;Ref:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
+
+&lt;h2 id=&quot;快捷键&quot;&gt;快捷键&lt;/h2&gt;
+&lt;blockquote&gt;
+  ctrl+`(就是1旁边那个键)：快速唤起console面板。 
+ctrl+Shift+p：调出packagecontrol面板。 
+ctrl+/ 快速注释 
+ctrl+光标 多点编辑 
+ctrl+Shift+上/下 键 可以整体移动一行代码。 
+ctrl+Shift+V 进行自适应缩进的黏贴。 
+Tab键 自动补全代码【超级好用】 
+ctrl+K+B 隐藏/显示左面Side Bar 
+C+enter 快速下启一行 
+ctrl+enter 快速下启一行 
+ctrl+shift+enter 快速上起一行 
+ctrl+[ 向前两个字节 ctrl+]向后两个字节 
+ctrl+左/右 一下子是跳一个单词 
+菜单栏 Goto &amp;gt; Goto Anyting. 快捷键 ctrl + P
+ctrl + shift + p  快速更改文件类型（选择语法模式）
+ctrl + p 快速查找并打开文件  如：wista/index.html
+ctrl + p 快速定位并边界 如：@body  可以快速定位到当前文件的body标签
+ctrl + h find/replace
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;快速查找&quot;&gt;快速查找&lt;/h3&gt;
+功能1：快速查询文件（支持模糊匹配）并高亮显示不同的文件，如view/index.html表示
+       查找view文件下的index.html
+功能2：符号功能（@ ）可以查询css中的选择器或js中的函数  如：@body 可以快速定位到当前文件的body标签
+功能3：可以模糊匹配编写代码 如：background-image可以输入bgm就匹配出来
+
+&lt;h3 id=&quot;多行游标&quot;&gt;多行游标&lt;/h3&gt;
+多行游标便于文件的更改，增加，几种设置多行游标的方法
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+ d&lt;/code&gt; 设置多行光标, &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+k&lt;/code&gt; 跳过当前行&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alt + f3&lt;/code&gt; 选择all&lt;/li&gt;
+  &lt;li&gt;按住&lt;code class=&quot;highlighter-rouge&quot;&gt;shift&lt;/code&gt; + mouse drag 任意选择地方设置多行游标&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;command-palette&quot;&gt;command Palette&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+shift+p&lt;/code&gt; 打开command Palette
+command Palette 支持模糊匹配
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;Ref:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/u014465934/article/details/72810763&quot;&gt;sublime入门基础和常用配置&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/video/484&quot;&gt;imooc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 01 Aug 2017 16:12:26 -0700</pubDate>
+        <link>http://localhost:4000/2017/08/01/sublime-text-3-syntax/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/01/sublime-text-3-syntax/</guid>
+        
+        <category>Sublime</category>
+        
+        <category>Tools</category>
+        
+        
+        <category>Sublime</category>
+        
+      </item>
     
       <item>
         <title>西雅图咖啡地图</title>
@@ -18,20 +110,11 @@
 
 &lt;h2 id=&quot;西雅图咖啡地图待更新&quot;&gt;西雅图咖啡地图（待更新）&lt;/h2&gt;
 
-&lt;img src=&quot;http://localhost:4000/assets/images/seattle_coffee_map.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/images/seattle_coffee_map.png&quot; alt=&quot;&quot; class=&quot;img-responsive&quot; /&gt;
 
 &lt;h2 id=&quot;ref&quot;&gt;ref&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;[咖啡地图&lt;/td&gt;
-          &lt;td&gt;“咖啡”遇上西雅图，好喝夜未眠](https://zhuanlan.zhihu.com/p/27704877)&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27704877&quot;&gt;咖啡地图 “咖啡”遇上西雅图，好喝夜未眠&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/35843431/answer/64699603&quot;&gt;品豆咖啡&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIyODE0OTIyOQ==&amp;amp;mid=2655551406&amp;amp;idx=1&amp;amp;sn=9d13a016ede721706761441c98f0396b&amp;amp;chksm=f3ea8d2cc49d043adabbf431c4e1ca172db0e18d3cf737f83e064e538d220f41235c786af851&amp;amp;scene=0&amp;amp;key=f2674fde6f8d5328280a48ef5d353286b0f35be14beb6f7b3ef9ccbabff6f13d6ee0f9727f701b21e90dbe528d4c891295fd44d580696b923942181155ddcfe449ae59ab5179d59bbc9eaeabc8e318e4&amp;amp;ascene=0&amp;amp;uin=MjAzNTYyNTk4MA%3D%3D&amp;amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.6+build(15G1611)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=OFWS5NzNq3Ixp1PKXULyd3bGPNmRXV%2Bv2E6e1hRa6GhTUlSAVQLiH5JuFJbBPuH3&quot;&gt;西雅图吃货小分队&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -210,48 +293,6 @@
         
         
         <category>GitHub</category>
-        
-      </item>
-    
-      <item>
-        <title>如何使用 babel</title>
-        <description>
-&lt;a href=&quot;https://babeljs.io/&quot;&gt;Babel&lt;/a&gt; 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。
-
-</description>
-        <pubDate>Tue, 14 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/06/14/how-to-use-babel/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/06/14/how-to-use-babel/</guid>
-        
-        <category>ES2015</category>
-        
-        <category>ES6</category>
-        
-        <category>ES5</category>
-        
-        <category>babel</category>
-        
-        
-        <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>JavaScript 语言精粹笔记3-方法、毒瘤等</title>
-        <description>
-记录一下阅读蝴蝶书的笔记，本篇为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。
-
-</description>
-        <pubDate>Fri, 10 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/06/10/JavaScript-good-parts-note3/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/06/10/JavaScript-good-parts-note3/</guid>
-        
-        <category>函数</category>
-        
-        <category>JavaScript</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
