@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jekyll 更换favicon</title>
+    <meta name="description" content="Jekyll 学习笔记，方便查找">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/2017/07/31/jekyII-change-favicon/">
+    <link rel="alternate" type="application/rss+xml" title="Yuming Ren" href="http://localhost:4000/feed.xml ">
+
+
+    <script>
+    // 百度统计代码
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?cf8506e0ef223e57ff6239944e5d46a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72449510-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Yuming Ren</a>
+        <small>Curious and Learning</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Jekyll 更换favicon</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-07-31
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>yuming
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#jekyll" title="Category: jekyll" rel="category">jekyll</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a-->
+        <a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#简介" id="markdown-toc-简介">简介</a></li>
+  <li><a href="#更换" id="markdown-toc-更换">更换：</a>    <ul>
+      <li><a href="#获取自己的favicon" id="markdown-toc-获取自己的favicon">获取自己的favicon</a></li>
+      <li><a href="#新加替换jekyll的favicon" id="markdown-toc-新加替换jekyll的favicon">新加/替换Jekyll的favicon</a></li>
+    </ul>
+  </li>
+  <li><a href="#测试" id="markdown-toc-测试">测试：</a></li>
+  <li><a href="#ref" id="markdown-toc-ref">Ref</a></li>
+</ul>
+
+<h2 id="简介">简介</h2>
+<blockquote>
+  <p>Favicon是favorites icon的缩写，是与某个网站或者网页相关联的图标，主要的实现方法是用HTML为任何一个网页指示其图标所存储的位置。这种方法是通过在页面的&lt;head&gt;部分添加两个link元件来实现的。这样，任何一个适当大小的（16×16像素或更大）的图像都可以用作favicon。尽管如此，多数情况下仍然使用ICO格式。其他网页浏览器现在也支持PNG（便携式网络图片）格式，和GIF（图形交换格式）动画图像格式。
+                   —<a href="https://zh.wikipedia.org/wiki/Favicon">Wiki</a></p>
+</blockquote>
+
+<p><img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/6/005/06e/31b/2cb05e2.jpg" alt="" /></p>
+
+<h2 id="更换">更换：</h2>
+
+<h3 id="获取自己的favicon">获取自己的favicon</h3>
+<p>在设计好自己的favicon之后，通常我们会把其他诸如.jpg, .gif等格式转化为.ico格式，因为ico格式通常可以被所有可以显示favicon的浏览器读取。网上有诸多转换器，比如
+<a href="http://cn.favicon-icon-generator.com/favicon">http://cn.favicon-icon-generator.com/favicon</a>
+下载之后即可得到自己的favicon.ico</p>
+
+<h3 id="新加替换jekyll的favicon">新加/替换Jekyll的favicon</h3>
+<p>Jekyll的初始默认favicon.ico应该在根目录下。为了方便更改维护，将调用ico文件的HTMLcode直接写在<code class="highlighter-rouge">_includes-&gt; head.html</code>下，这样会自动生成到所有页面的<code class="highlighter-rouge">&lt;head&gt;</code>里。</p>
+<ul>
+  <li>建议在<code class="highlighter-rouge">head.html</code>下包含以下HTML代码
+    <div class="highlighter-rouge"><pre class="highlight"><code>&lt;link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon"&gt;
+&lt;link rel="icon" href="/favicon.ico?" type="image/x-icon"&gt;
+</code></pre>
+    </div>
+
+    <p>然而，只有第一行是必须的，因为“shortcut icon”字符串将被多数遵守标准的浏览器识别为列出可能的关键词（“shortcut”将被忽略，而仅使用“icon”）；而Internet Explorer将会把它作为一个单独的名称（“shortcut icon”）。这样做的结果是所有浏览器都可以理解此代码。只有当希望为新浏览器提供另一种备用图像（例如动画GIF）时，才有必要添加第二行。</p>
+  </li>
+</ul>
+
+<h2 id="测试">测试：</h2>
+
+<p>因为Favicon是缓存在浏览器中的，所以在更换了favicon之后，需要clean浏览器中的Cache，一般可以用的方法为直接清空所以缓存，但是如果只是更换Favicon，Firefox提供了一种更为简洁的方法。
+使用Firefox Addon <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/">SQLite Manager</a>。</p>
+
+<p>Firefox浏览过的网页的缓存文件默认是在个人配置文件夹的\cache\目录下。具体步骤可以参考<a href="https://stackoverflow.com/questions/8616016/favicon-not-displayed-by-firefox">https://stackoverflow.com/questions/8616016/favicon-not-displayed-by-firefox</a></p>
+
+<p>注：在地址栏输入<code class="highlighter-rouge">about:cache</code>可以查看当前缓存文件的路径。其中Disk 对应的Cache Directory就是firefox缓存的文件夹位置了。</p>
+
+<p>清空缓存后，运行<code class="highlighter-rouge">jekyll serve</code>测试新的favicon是否正确显示。</p>
+
+<h2 id="ref">Ref</h2>
+<ol>
+  <li><a href="https://zh.wikipedia.org/wiki/Favicon">Wiki</a></li>
+  <li><a href="https://stackoverflow.com/questions/30551501/unable-to-set-favicon-using-jekyll-and-github-pages">Unable to set favicon using Jekyll and github pages</a></li>
+  <li><a href="https://stackoverflow.com/questions/8616016/favicon-not-displayed-by-firefox">favicon not displayed by Firefox</a></li>
+</ol>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/2017/07/30/Markdown-Learnnote/">Markdown 学习笔记</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/2017/07/31/seattle-coffee/">西雅图咖啡地图</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/2017/07/31/jekyII-change-favicon/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/2017/07/31/jekyII-change-favicon/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//yumingren.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             写字的地方 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/renyuming1" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:renyuming1@gmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>   
+            <!--<a href="https://www.zhihu.com/people/renyuming" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  -->
+            <!--<a href="https://twitter.com/renyuming" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  -->
+            <!--<a href="https://www.facebook.com/renyuming" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   -->
+            <!--<a href="https://www.linkedin.com/in/renyuming" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  -->
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>
