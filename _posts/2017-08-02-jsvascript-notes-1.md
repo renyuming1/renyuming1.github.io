@@ -2,7 +2,7 @@
 layout: post
 title:  Javascript高级程序设计笔记
 date:   2017-08-02 13:12:26
-categories: JavaScript
+categoriesundefinedpt
 tags: Javascript
 author: yuming
 ---
@@ -46,11 +46,133 @@ script属性：
 
 
 
-### external js source vs embedded js code
+### External JavaScript Source vs Embedded Javascript Code
 + maintainable:
 + Cacheable: If both pages use same js file, will only need to load once.
 + For future: compatible with XHTML
 
 
+
+## Syntax
+
+### ECMAScript
+区分大小写  
+标识符： Camel  
+#### Strict Mode: 
+   ECMAScript 5 引入Strict Mode,为Javascript定义了一种不同的解析与执行模型。
+1. 整个脚本启动严格模式：
+   ``` 
+   *use strict*;
+   ```
+
+2. 指定函数在严格模式下运行
+   ```javascript
+   function foo(){
+     *use strict*;
+     // function body
+   }
+   ```
+ 
+#### 逗号
+EMCASCript用分号结尾，省略分号，则由解析器确定语句结尾。
+```javascript
+var sum = a + b  // no comma, not recommend
+var diff = a -b; // recommend
+```
+使用逗号的好处有很多，比如
+1. 放心的删除多余空格压缩code
+2. 增进代码性能，因为解析器不必花时间推测应该在哪里插入分号了。
+
+
+## Variable
+
+Javascript的变量是松散类型的，每个变量只是一个用于保存值的占位符而已。需要`var` 操作符定义变量名， 如    
+```
+var message; // if not assigned, the value will be undefined
+var message = "hello"
+```
+> 注：初始化变量并不会把它标记为特殊类型，比如字符串，只是赋值给变量，因此可以随便给变量赋别的值  
+> Question? : How to detect the type then? Constructor? Prototype?
+
+
+
+##＃ 数据类型
+#### 基本类型
+##### Undefined:
+声明的未赋值变量和未声明变量都是undefined.
+##### Null:
+null表示空对象指针, 如果定义变量准备在将来保存object，建议将变量初始化为null，方便变量是否已经保存了对象的引用，如
+```javascript
+if(car != null){
+    // car operations
+}
+```
+`undefined` 派生自 `null`，所以相等性测试为true
+```javascript
+var car = null;
+tyoeof car // 'object'
+alert(null == undefined); //true
+```
+
+Boolean:
+true or false, 只有两个值。
+函数Boolean()可以用来把其他type转化为boolean，比如
+```javascript
+var foo = "hello world!";
+var fooAsBoolean = Boolean(foo); //true
+```
+Boolean()转化规则为
+
+Datatype | convert as `true`  | convert as `false`
+--------| --------- | --------
+number | not 0 or NaN   | 0 or NaN
+object | object | null
+string | not empty | ""
+undefined | n/a | undefined
+
+这个在if判断语句里十分有用，比如
+```javascript
+var msg = "Hello my lady!"
+if(msg) { //true;
+    alert('Ya my lord!') 
+}
+
+```
+
+
+##### Number:
+
+##### String
+
+#### 复杂类型
+##### Object
+Object本质上是由一组无序的名值组成。
+
+#### typeof
+typeof是
+
+
+
+### function
+
+#### return:
+Function不需要有return 语句，例子：
+```javascript
+function foo(n1,n2){
+    return n1+n2;
+} // return n1 + n2
+
+function nuts(){
+    return;
+} // return undefined
+
+function foo(){
+    console.log("hello my lady!")
+} // return undefined
+
+```
+
+
+#### Arguments
 
 
