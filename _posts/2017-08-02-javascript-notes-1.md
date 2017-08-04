@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Javascript高级程序设计笔记
+title:  Javascript高级程序设计笔记1
 date:   2017-08-02 13:12:26
-categoriesundefinedpt
+categories: Javascript
 tags: Javascript
 author: yuming
 ---
@@ -141,6 +141,24 @@ if(msg) { //true;
 
 
 ##### Number:
+常见number几种值为整数，浮点数，科学计数法
+```javascript
+ var intNum = 7;
+ var floating1 = 1.0
+ var floating2 = .34567 //valid,not recommend
+ var floating3 = 3.1415e7; //31415000
+```
+> floating number 最高精度为17位小数，但是计算时候有误差
+> ```javascript
+>  var a = 0,1, b = 0.2;  
+>  if( a + b == 0.3) { // indeed a + b is 0.30000000000000004, 正好为17位小数， so false 
+>    alert("it is 0.3"):
+>  }
+>  ```
+
+
+数值范围：
+`Number.MIN_VALUE`在大多数浏览器是`5e-324`， `Number.MAX_VALUE`在大多数浏览器是`1.7976931348623157e+308`。超过的值为`Infinity`
 
 ##### String
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Javascript高级程序设计笔记</title>
+    <title>Javascript高级程序设计笔记1</title>
     <meta name="description" content="">
 
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
@@ -149,7 +149,7 @@
 
         <div class="page clearfix" post>
     <div class="left">
-        <h1>Javascript高级程序设计笔记</h1>
+        <h1>Javascript高级程序设计笔记1</h1>
         <div class="label">
 
             <div class="label-card">
@@ -174,7 +174,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#JavaScript" title="Category: JavaScript" rel="category">JavaScript</a>
+        <a href="/category/#Javascript" title="Category: Javascript" rel="category">Javascript</a>
     
   
 
@@ -221,10 +221,20 @@
       <li><a href="#基本类型" id="markdown-toc-基本类型">基本类型</a>        <ul>
           <li><a href="#undefined" id="markdown-toc-undefined">Undefined:</a></li>
           <li><a href="#null" id="markdown-toc-null">Null:</a></li>
+          <li><a href="#number" id="markdown-toc-number">Number:</a></li>
+          <li><a href="#string" id="markdown-toc-string">String</a></li>
         </ul>
       </li>
-      <li><a href="#复杂类型" id="markdown-toc-复杂类型">复杂类型</a></li>
+      <li><a href="#复杂类型" id="markdown-toc-复杂类型">复杂类型</a>        <ul>
+          <li><a href="#object" id="markdown-toc-object">Object</a></li>
+        </ul>
+      </li>
       <li><a href="#typeof" id="markdown-toc-typeof">typeof</a></li>
+      <li><a href="#function" id="markdown-toc-function">function</a>        <ul>
+          <li><a href="#return" id="markdown-toc-return">return:</a></li>
+          <li><a href="#arguments" id="markdown-toc-arguments">Arguments</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -393,16 +403,57 @@ true or false, 只有两个值。
 </code></pre>
 </div>
 
-<p>Number:</p>
+<h5 id="number">Number:</h5>
+<p>常见number几种值为整数，浮点数，科学计数法</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">intNum</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+ <span class="kd">var</span> <span class="nx">floating1</span> <span class="o">=</span> <span class="mf">1.0</span>
+ <span class="kd">var</span> <span class="nx">floating2</span> <span class="o">=</span> <span class="p">.</span><span class="mi">34567</span> <span class="c1">//valid,not recommend</span>
+ <span class="kd">var</span> <span class="nx">floating3</span> <span class="o">=</span> <span class="mf">3.1415e7</span><span class="p">;</span> <span class="c1">//31415000</span>
+</code></pre>
+</div>
+<blockquote>
+  <p>floating number 最高精度为17位小数，但是计算时候有误差</p>
+  <div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">;</span>  
+ <span class="k">if</span><span class="p">(</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span> <span class="o">==</span> <span class="mf">0.3</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// indeed a + b is 0.30000000000000004, 正好为17位小数， so false </span>
+   <span class="nx">alert</span><span class="p">(</span><span class="s2">"it is 0.3"</span><span class="p">)</span><span class="err">:</span>
+ <span class="p">}</span>
+</code></pre>
+  </div>
+</blockquote>
 
-<p>String</p>
+<p>数值范围：
+<code class="highlighter-rouge">Number.MIN_VALUE</code>在大多数浏览器是<code class="highlighter-rouge">5e-324</code>， <code class="highlighter-rouge">Number.MAX_VALUE</code>在大多数浏览器是<code class="highlighter-rouge">1.7976931348623157e+308</code>。超过的值为<code class="highlighter-rouge">Infinity</code></p>
+
+<h5 id="string">String</h5>
 
 <h4 id="复杂类型">复杂类型</h4>
-<p>Object
-Object本质上是由一组无序的名值组成。</p>
+<h5 id="object">Object</h5>
+<p>Object本质上是由一组无序的名值组成。</p>
 
 <h4 id="typeof">typeof</h4>
 <p>typeof是</p>
+
+<h3 id="function">function</h3>
+
+<h4 id="return">return:</h4>
+<p>Function不需要有return 语句，例子：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">n1</span><span class="p">,</span><span class="nx">n2</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">n1</span><span class="o">+</span><span class="nx">n2</span><span class="p">;</span>
+<span class="p">}</span> <span class="c1">// return n1 + n2</span>
+
+<span class="kd">function</span> <span class="nx">nuts</span><span class="p">(){</span>
+    <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span> <span class="c1">// return undefined</span>
+
+<span class="kd">function</span> <span class="nx">foo</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"hello my lady!"</span><span class="p">)</span>
+<span class="p">}</span> <span class="c1">// return undefined</span>
+
+</code></pre>
+</div>
+
+<h4 id="arguments">Arguments</h4>
+
 
         </article>
         <hr>
