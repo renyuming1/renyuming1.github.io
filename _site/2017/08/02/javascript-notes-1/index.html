@@ -212,25 +212,33 @@
   <li><a href="#syntax" id="markdown-toc-syntax">Syntax</a>    <ul>
       <li><a href="#ecmascript" id="markdown-toc-ecmascript">ECMAScript</a>        <ul>
           <li><a href="#strict-mode" id="markdown-toc-strict-mode">Strict Mode:</a></li>
-          <li><a href="#逗号" id="markdown-toc-逗号">逗号</a></li>
+          <li><a href="#分号" id="markdown-toc-分号">分号</a></li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><a href="#variable" id="markdown-toc-variable">Variable</a>    <ul>
-      <li><a href="#基本类型" id="markdown-toc-基本类型">基本类型</a>        <ul>
-          <li><a href="#undefined" id="markdown-toc-undefined">Undefined:</a></li>
-          <li><a href="#null" id="markdown-toc-null">Null:</a></li>
-          <li><a href="#number" id="markdown-toc-number">Number:</a></li>
-          <li><a href="#string" id="markdown-toc-string">String</a></li>
+  <li><a href="#变量" id="markdown-toc-变量">变量</a>    <ul>
+      <li><a href="#数据类型" id="markdown-toc-数据类型">数据类型</a>        <ul>
+          <li><a href="#基本类型" id="markdown-toc-基本类型">基本类型</a>            <ul>
+              <li><a href="#undefined" id="markdown-toc-undefined">Undefined:</a></li>
+              <li><a href="#null" id="markdown-toc-null">Null:</a></li>
+              <li><a href="#boolean" id="markdown-toc-boolean">Boolean:</a></li>
+              <li><a href="#number" id="markdown-toc-number">Number:</a></li>
+              <li><a href="#string" id="markdown-toc-string">String:</a></li>
+            </ul>
+          </li>
+          <li><a href="#复杂类型" id="markdown-toc-复杂类型">复杂类型</a>            <ul>
+              <li><a href="#object" id="markdown-toc-object">Object</a></li>
+            </ul>
+          </li>
+          <li><a href="#typeof" id="markdown-toc-typeof">typeof</a></li>
         </ul>
       </li>
-      <li><a href="#复杂类型" id="markdown-toc-复杂类型">复杂类型</a>        <ul>
-          <li><a href="#object" id="markdown-toc-object">Object</a></li>
+      <li><a href="#操作符" id="markdown-toc-操作符">操作符</a>        <ul>
+          <li><a href="#相等" id="markdown-toc-相等">相等</a></li>
         </ul>
       </li>
-      <li><a href="#typeof" id="markdown-toc-typeof">typeof</a></li>
-      <li><a href="#function" id="markdown-toc-function">function</a>        <ul>
+      <li><a href="#函数" id="markdown-toc-函数">函数</a>        <ul>
           <li><a href="#return" id="markdown-toc-return">return:</a></li>
           <li><a href="#arguments" id="markdown-toc-arguments">Arguments</a></li>
         </ul>
@@ -311,7 +319,7 @@ Example:
   </li>
 </ol>
 
-<h4 id="逗号">逗号</h4>
+<h4 id="分号">分号</h4>
 <p>EMCASCript用分号结尾，省略分号，则由解析器确定语句结尾。</p>
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>  <span class="c1">// no comma, not recommend</span>
 <span class="kd">var</span> <span class="nx">diff</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">-</span><span class="nx">b</span><span class="p">;</span> <span class="c1">// recommend</span>
@@ -323,7 +331,7 @@ Example:
   <li>增进代码性能，因为解析器不必花时间推测应该在哪里插入分号了。</li>
 </ol>
 
-<h2 id="variable">Variable</h2>
+<h2 id="变量">变量</h2>
 
 <p>Javascript的变量是松散类型的，每个变量只是一个用于保存值的占位符而已。需要<code class="highlighter-rouge">var</code> 操作符定义变量名， 如</p>
 <div class="highlighter-rouge"><pre class="highlight"><code>var message; // if not assigned, the value will be undefined
@@ -335,7 +343,7 @@ var message = "hello"
 Question? : How to detect the type then? Constructor? Prototype?</p>
 </blockquote>
 
-<p>##＃ 数据类型</p>
+<h3 id="数据类型">数据类型</h3>
 <h4 id="基本类型">基本类型</h4>
 <h5 id="undefined">Undefined:</h5>
 <p>声明的未赋值变量和未声明变量都是undefined.</p>
@@ -353,8 +361,8 @@ Question? : How to detect the type then? Constructor? Prototype?</p>
 </code></pre>
 </div>
 
-<p>Boolean:
-true or false, 只有两个值。
+<h5 id="boolean">Boolean:</h5>
+<p>true or false, 只有两个值。
 函数Boolean()可以用来把其他type转化为boolean，比如</p>
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s2">"hello world!"</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">fooAsBoolean</span> <span class="o">=</span> <span class="nb">Boolean</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span> <span class="c1">//true</span>
@@ -422,9 +430,156 @@ true or false, 只有两个值。
 </blockquote>
 
 <p>数值范围：
-<code class="highlighter-rouge">Number.MIN_VALUE</code>在大多数浏览器是<code class="highlighter-rouge">5e-324</code>， <code class="highlighter-rouge">Number.MAX_VALUE</code>在大多数浏览器是<code class="highlighter-rouge">1.7976931348623157e+308</code>。超过的值为<code class="highlighter-rouge">Infinity</code></p>
+<code class="highlighter-rouge">Number.MIN_VALUE</code>在大多数浏览器是<code class="highlighter-rouge">5e-324</code>， <code class="highlighter-rouge">Number.MAX_VALUE</code>在大多数浏览器是<code class="highlighter-rouge">1.7976931348623157e+308</code>。超过的值为<code class="highlighter-rouge">Infinity</code>, <code class="highlighter-rouge">Infinity</code>有正负，但是<code class="highlighter-rouge">Infinity</code>不能参与计算，</p>
 
-<h5 id="string">String</h5>
+<p>NaN
+Not a number, 表示一个本来要返回数值的操作数未返回的情况，比如除以0.</p>
+
+<p>NaN有以下几个特点：</p>
+<ol>
+  <li>所有涉及NaN的操作都会返回NaN
+    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">NaN</span><span class="o">/</span><span class="mi">0</span><span class="p">);</span> <span class="c1">//  NaN</span>
+</code></pre>
+    </div>
+  </li>
+  <li>NaN与任何值不相等
+    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">NaN</span> <span class="o">==</span> <span class="kc">NaN</span><span class="p">)</span> <span class="c1">// false;</span>
+ <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">NaN</span> <span class="o">===</span> <span class="kc">NaN</span><span class="p">)</span> <span class="c1">// false; </span>
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<p>所以判断<code class="highlighter-rouge">NaN</code>需要用新的方法，<code class="highlighter-rouge">isNaN()</code>， <code class="highlighter-rouge">isNaN</code>接到值之后，尝试将这个值转换为数值，任何不能被转换为数值的值都会返回true。注意，string比如<code class="highlighter-rouge">"10"</code>或者boolean都可以转换为数值。</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nb">isNaN</span><span class="p">(</span><span class="kc">NaN</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nb">isNaN</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="c1">// false</span>
+<span class="nb">isNaN</span><span class="p">(</span><span class="s2">"10"</span><span class="p">);</span> <span class="c1">//false</span>
+<span class="nb">isNaN</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">);</span> <span class="c1">// true, can not be converted to Num</span>
+<span class="nb">isNaN</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">// false, convert to 1</span>
+<span class="kd">var</span> <span class="nx">object1</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span><span class="k">return</span> <span class="mi">1</span><span class="p">;};</span> <span class="c1">// define a object object1</span>
+<span class="nb">isNaN</span><span class="p">(</span><span class="nx">object1</span><span class="p">);</span> <span class="c1">//true, use what the object return to judge</span>
+
+</code></pre>
+</div>
+<p>数值转换：<br />
+主要的几种转换方法为</p>
+<ul>
+  <li>Number()</li>
+  <li>parseInt()</li>
+  <li>parseFloat()</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>函数</th>
+      <th>Number()</th>
+      <th>parseInt()</th>
+      <th>parseFloat()</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input type</td>
+      <td>all type</td>
+      <td>string only</td>
+      <td>string only</td>
+    </tr>
+    <tr>
+      <td>boolean</td>
+      <td>true -&gt;1; false -&gt; 0;</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>null</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>undefined</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>数字 -&gt; 数字，可以转换十进制，十六进制，浮点型；其他格式为NaN</td>
+      <td>从左往右解析，直到遇到非数字字符</td>
+      <td>解析到无效字符，比如第二个小数点</td>
+    </tr>
+    <tr>
+      <td>””</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>前导0</td>
+      <td>解析进制</td>
+      <td>解析进制</td>
+      <td>始终忽略，因此只解析十进制</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>一些具体例子：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">num1</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">);</span> <span class="c1">// NaN</span>
+ <span class="kd">var</span> <span class="nx">num2</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span> <span class="c1">//0</span>
+ <span class="kd">var</span> <span class="nx">num3</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="s2">"00001.1"</span><span class="p">);</span> <span class="c1">// 1,1</span>
+ <span class="kd">var</span> <span class="nx">num4</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">//1</span>
+ <span class="kd">var</span> <span class="nx">num5</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span> <span class="c1">//0</span>
+ <span class="kd">var</span> <span class="nx">num6</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s2">"666laotie"</span><span class="p">);</span> <span class="c1">// 666</span>
+ <span class="kd">var</span> <span class="nx">num7</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span> <span class="c1">// NaN</span>
+ <span class="kd">var</span> <span class="nx">num8</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="mf">22.5</span><span class="p">);</span> <span class="c1">// 22</span>
+ <span class="kd">var</span> <span class="nx">num9</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s2">"070"</span><span class="p">);</span> <span class="c1">// 56(八进制)</span>
+ <span class="kd">var</span> <span class="nx">num10</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s2">"70"</span><span class="p">);</span> <span class="c1">// 70</span>
+ <span class="kd">var</span> <span class="nx">num11</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s2">"0xf"</span><span class="p">);</span> <span class="c1">// 15(十六进制)</span>
+ <span class="kd">var</span> <span class="nx">num12</span> <span class="o">=</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">"666laotie"</span><span class="p">);</span> <span class="c1">// 666</span>
+ <span class="kd">var</span> <span class="nx">num13</span> <span class="o">=</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">"0xA"</span><span class="p">);</span> <span class="c1">// 0</span>
+ <span class="kd">var</span> <span class="nx">num14</span> <span class="o">=</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">"1.23"</span><span class="p">);</span> <span class="c1">// 1.23</span>
+ <span class="kd">var</span> <span class="nx">num15</span> <span class="o">=</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">"1.2.3"</span><span class="p">);</span> <span class="c1">// 1.2</span>
+ <span class="kd">var</span> <span class="nx">num16</span> <span class="o">=</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="s2">"0666"</span><span class="p">);</span> <span class="c1">// 666</span>
+
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">parseInt()</code> 在解析八进制、十六进制这种字符串时，ECMAScript 3 和 5 存在分歧。因此，<code class="highlighter-rouge">parseInt()</code>提供了第二个参数，转换基数。比如</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s2">"0xAF"</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span> <span class="c1">//175</span>
+<span class="kd">var</span> <span class="nx">num1</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s2">"AF"</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span> <span class="c1">//175</span>
+<span class="kd">var</span> <span class="nx">num2</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="err">"</span><span class="nx">AF</span><span class="p">);</span> <span class="c1">//NaN </span>
+</code></pre>
+</div>
+
+<h5 id="string">String:</h5>
+<p>Javascript中的字符串是不可变的。
+字符串比较：</p>
+
+<p>转化为string：</p>
+<ol>
+  <li>toString():
+对于null，undefined无效
+    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">value1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">value2</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">value3</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="nx">value4</span><span class="p">;</span>
+<span class="nx">value1</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span> <span class="c1">// "10"</span>
+<span class="nx">value2</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span> <span class="c1">// "true"</span>
+<span class="nx">value3</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span> <span class="c1">// syntax error</span>
+<span class="nx">value4</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span> <span class="c1">// syntax error</span>
+</code></pre>
+    </div>
+  </li>
+  <li>String():
+适用于null,undefined,其他情况与<code class="highlighter-rouge">toString()</code>完全一样
+    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">value1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">value2</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">value3</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="nx">value4</span><span class="p">;</span>
+<span class="nb">String</span><span class="p">(</span><span class="nx">value1</span><span class="p">);</span> <span class="c1">// "10"</span>
+<span class="nb">String</span><span class="p">(</span><span class="nx">value2</span><span class="p">);</span> <span class="c1">// "true"</span>
+<span class="nb">String</span><span class="p">(</span><span class="nx">value3</span><span class="p">);</span> <span class="c1">// "null"</span>
+<span class="nb">String</span><span class="p">(</span><span class="nx">value4</span><span class="p">);</span> <span class="c1">// "undefined"</span>
+</code></pre>
+    </div>
+  </li>
+</ol>
 
 <h4 id="复杂类型">复杂类型</h4>
 <h5 id="object">Object</h5>
@@ -433,7 +588,63 @@ true or false, 只有两个值。
 <h4 id="typeof">typeof</h4>
 <p>typeof是</p>
 
-<h3 id="function">function</h3>
+<h3 id="操作符">操作符</h3>
+<h4 id="相等">相等</h4>
+<ol>
+  <li>”==” &amp; “!=”
+比较规则：
+    <ul>
+      <li>bool, false -&gt; 0, true -&gt; 1</li>
+      <li>string vs number, 先把string换成number</li>
+      <li>Object vs not Object, valueof(Object)</li>
+    </ul>
+  </li>
+</ol>
+
+<p>特殊情况</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>statement</th>
+      <th>value</th>
+      <th>statement</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>null = undefined</td>
+      <td>true</td>
+      <td>“NaN” == NaN</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>“5” == 5</td>
+      <td>true</td>
+      <td>false == 0</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>null == 0</td>
+      <td>false</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>”===” &amp; “!==” <br />
+比较之前不转换操作数，因此只在操作数未转换前就相等时才返回true。
+    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="kc">null</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="c1">// false, not same type</span>
+ <span class="s2">"55"</span> <span class="o">===</span> <span class="mi">55</span> <span class="c1">//false, not same type</span>
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<h3 id="函数">函数</h3>
 
 <h4 id="return">return:</h4>
 <p>Function不需要有return 语句，例子：</p>
@@ -453,7 +664,59 @@ true or false, 只有两个值。
 </div>
 
 <h4 id="arguments">Arguments</h4>
+<p>Javascript function 使用一个arguments数组传入参数。因此，在函数体内也可以通过<code class="highlighter-rouge">arguments</code>对象访问参数数组，从而获取传递给函数的参数。使用<code class="highlighter-rouge">length</code>判断传递了多少参数。</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">alertArgs</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<p>可以用这个方式让函数接收任意个参数并且分别实现功能。</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">showState</span><span class="p">(){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">"single"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">"married"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">"???"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
+
+<span class="nx">showState</span><span class="p">(</span><span class="s2">"me"</span><span class="p">);</span> <span class="c1">// "single"</span>
+<span class="nx">showState</span><span class="p">(</span><span class="s2">"me"</span><span class="p">,</span> <span class="s2">"you"</span><span class="p">);</span> <span class="c1">//"married"</span>
+<span class="nx">showState</span><span class="p">();</span> <span class="c1">// "???"</span>
+</code></pre>
+</div>
+<p>arguments 可以与命名了的参数一起用，比如</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doAdd</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="nx">num1</span> <span class="o">+</span> <span class="mi">10</span><span class="p">);</span> <span class="c1">//if no num2, by default add 10</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">num2</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<blockquote>
+  <p>注： 此处有一点要注意，看这个例子</p>
+  <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doAdd</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">num2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">doAdd</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">);</span> <span class="c1">// 20 + 10 =30</span>
+</code></pre>
+  </div>
+  <p>arguments中的值会自动反映到对应的参数中，比如此处<code class="highlighter-rouge">arguments[1]</code>会对应到<code class="highlighter-rouge">num2</code>。但是，这两个值并不在相同的内存空间中，只是值会同步。</p>
+
+</blockquote>
+
+<blockquote>
+  <p>注: ECMAScript中的所有参数传递的都是值，不可能通过引用传递参数（ref）</p>
+</blockquote>
+
+<p>因为Javascript没有检测参数长度或者参数类型，因此不可以overload。</p>
 
         </article>
         <hr>

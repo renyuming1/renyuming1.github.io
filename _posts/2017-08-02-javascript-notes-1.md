@@ -73,7 +73,7 @@ script属性：
    }
    ```
  
-#### 逗号
+#### 分号
 EMCASCript用分号结尾，省略分号，则由解析器确定语句结尾。
 ```javascript
 var sum = a + b  // no comma, not recommend
@@ -84,7 +84,7 @@ var diff = a -b; // recommend
 2. 增进代码性能，因为解析器不必花时间推测应该在哪里插入分号了。
 
 
-## Variable
+## 变量
 
 Javascript的变量是松散类型的，每个变量只是一个用于保存值的占位符而已。需要`var` 操作符定义变量名， 如    
 ```
@@ -96,7 +96,7 @@ var message = "hello"
 
 
 
-##＃ 数据类型
+### 数据类型
 #### 基本类型
 ##### Undefined:
 声明的未赋值变量和未声明变量都是undefined.
@@ -114,7 +114,7 @@ tyoeof car // 'object'
 alert(null == undefined); //true
 ```
 
-Boolean:
+##### Boolean:
 true or false, 只有两个值。
 函数Boolean()可以用来把其他type转化为boolean，比如
 ```javascript
@@ -158,9 +158,110 @@ if(msg) { //true;
 
 
 数值范围：
-`Number.MIN_VALUE`在大多数浏览器是`5e-324`， `Number.MAX_VALUE`在大多数浏览器是`1.7976931348623157e+308`。超过的值为`Infinity`
+`Number.MIN_VALUE`在大多数浏览器是`5e-324`， `Number.MAX_VALUE`在大多数浏览器是`1.7976931348623157e+308`。超过的值为`Infinity`, `Infinity`有正负，但是`Infinity`不能参与计算，
 
-##### String
+NaN
+Not a number, 表示一个本来要返回数值的操作数未返回的情况，比如除以0. 
+
+NaN有以下几个特点：
+1. 所有涉及NaN的操作都会返回NaN
+```javascript
+ console.log(NaN/0); //  NaN
+```
+2. NaN与任何值不相等
+```javascript
+ console.log(NaN == NaN) // false;
+ console.log(NaN === NaN) // false; 
+```
+
+所以判断`NaN`需要用新的方法，`isNaN()`， `isNaN`接到值之后，尝试将这个值转换为数值，任何不能被转换为数值的值都会返回true。注意，string比如`"10"`或者boolean都可以转换为数值。
+
+```javascript
+isNaN(NaN); // true
+isNaN(10); // false
+isNaN("10"); //false
+isNaN("blue"); // true, can not be converted to Num
+isNaN(true); // false, convert to 1
+var object1 = function(){return 1;}; // define a object object1
+isNaN(object1); //true, use what the object return to judge
+
+```
+数值转换：  
+主要的几种转换方法为 
+- Number()  
+- parseInt()  
+- parseFloat()  
+
+
+函数 | Number()| parseInt()| parseFloat() 
+----|  ----- | ------ | -----
+Input type |  all type    |  string only   |  string only    
+boolean |  true ->1; false -> 0;    | NaN  |  NaN   
+null | 0 | NaN | NaN
+undefined | NaN | NaN | NaN
+string | 数字 -> 数字，可以转换十进制，十六进制，浮点型；其他格式为NaN | 从左往右解析，直到遇到非数字字符 | 解析到无效字符，比如第二个小数点
+"" |  0 | NaN  | NaN
+前导0 | 解析进制 | 解析进制  | 始终忽略，因此只解析十进制
+
+
+
+一些具体例子：
+```javascript
+ var num1 = Number("Hello"); // NaN
+ var num2 = Number(""); //0
+ var num3 = Number("00001.1"); // 1,1
+ var num4 = Number(true); //1
+ var num5 = Number(false); //0
+ var num6 = parseInt("666laotie"); // 666
+ var num7 = parseInt(""); // NaN
+ var num8 = parseInt(22.5); // 22
+ var num9 = parseInt("070"); // 56(八进制)
+ var num10 = parseInt("70"); // 70
+ var num11 = parseInt("0xf"); // 15(十六进制)
+ var num12 = parseFloat("666laotie"); // 666
+ var num13 = parseFloat("0xA"); // 0
+ var num14 = parseFloat("1.23"); // 1.23
+ var num15 = parseFloat("1.2.3"); // 1.2
+ var num16 = parseFloat("0666"); // 666
+
+```
+
+
+`parseInt()` 在解析八进制、十六进制这种字符串时，ECMAScript 3 和 5 存在分歧。因此，`parseInt()`提供了第二个参数，转换基数。比如
+```javascript
+var num = parseInt("0xAF", 16); //175
+var num1 = parseInt("AF",16); //175
+var num2 = parseInt("AF); //NaN 
+```
+
+
+
+
+##### String:
+Javascript中的字符串是不可变的。
+字符串比较：
+
+转化为string：
+1. toString():
+对于null，undefined无效
+```javascript
+var value1 = 10, value2 = true, value3 = null; value4;
+value1.toString(); // "10"
+value2.toString(); // "true"
+value3.toString(); // syntax error
+value4.toString(); // syntax error
+```
+2. String():
+适用于null,undefined,其他情况与`toString()`完全一样 
+```javascript
+var value1 = 10, value2 = true, value3 = null; value4;
+String(value1); // "10"
+String(value2); // "true"
+String(value3); // "null"
+String(value4); // "undefined"
+```
+
+
 
 #### 复杂类型
 ##### Object
@@ -171,7 +272,37 @@ typeof是
 
 
 
-### function
+### 操作符
+#### 相等
+1. "==" & "!="
+比较规则：
+  - bool, false -> 0, true -> 1
+  - string vs number, 先把string换成number
+  - Object vs not Object, valueof(Object)
+
+  特殊情况
+ 
+ statement |  value | statement |  value
+ --- | ---| --- | ----
+ null = undefined | true | "NaN" == NaN | false
+ "5" == 5 | true | false == 0 | true
+ null == 0 |false |   |  
+  
+
+
+
+2. "===" & "!=="   
+比较之前不转换操作数，因此只在操作数未转换前就相等时才返回true。
+```javascript
+ null === undefined // false, not same type
+ "55" === 55 //false, not same type
+```
+
+
+
+
+### 函数
+
 
 #### return:
 Function不需要有return 语句，例子：
@@ -192,5 +323,52 @@ function foo(){
 
 
 #### Arguments
+Javascript function 使用一个arguments数组传入参数。因此，在函数体内也可以通过`arguments`对象访问参数数组，从而获取传递给函数的参数。使用`length`判断传递了多少参数。
+```javascript
+function alertArgs() {
+    alert(arguments.length);
+}
+```
+可以用这个方式让函数接收任意个参数并且分别实现功能。
+```javascript
+function showState(){
+    if(arguments.length == 1){
+        alert("single");
+    }
+    else if(arguments.length == 2){
+        alert("married");
+    }
+    else {
+        alert("???");
+    }
+}
 
 
+showState("me"); // "single"
+showState("me", "you"); //"married"
+showState(); // "???"
+```
+arguments 可以与命名了的参数一起用，比如
+```javascript
+function doAdd(num1, num2){
+    if(arguments.length == 1){
+        alert(num1 + 10); //if no num2, by default add 10
+    } else if(arguments.length == 2){
+        alert(arguments[0] + num2);
+    }
+}
+```
+> 注： 此处有一点要注意，看这个例子
+> ```javascript
+> function doAdd(num1, num2) {
+>   arguments[1] = 10;
+>   alert(arguments[0] + num2);
+> }
+> doAdd(20,30); // 20 + 10 =30
+> ```
+> arguments中的值会自动反映到对应的参数中，比如此处`arguments[1]`会对应到`num2`。但是，这两个值并不在相同的内存空间中，只是值会同步。
+>
+
+> 注: ECMAScript中的所有参数传递的都是值，不可能通过引用传递参数（ref）
+
+因为Javascript没有检测参数长度或者参数类型，因此不可以overload。
