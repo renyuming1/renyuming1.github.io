@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Javascript高级程序设计笔记2</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/2017/08/04/javascript-notes-2/">
+    <link rel="alternate" type="application/rss+xml" title="Yuming Ren" href="http://localhost:4000/feed.xml ">
+
+
+    <script>
+    // 百度统计代码
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?cf8506e0ef223e57ff6239944e5d46a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72449510-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Yuming Ren</a>
+        <small>Curious and Learning</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Javascript高级程序设计笔记2</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-08-04
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>yuming
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Javascript" title="Category: Javascript" rel="category">Javascript</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Javascript" title="Tag: Javascript" rel="tag">Javascript</a-->
+        <a href="/tag/#Javascript" title="Tag: Javascript" rel="tag">Javascript</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#执行环境作用域" id="markdown-toc-执行环境作用域">执行环境，作用域</a>    <ul>
+      <li><a href="#执行环境execution-context" id="markdown-toc-执行环境execution-context">执行环境(Execution context)：</a></li>
+      <li><a href="#变量对象variable-object" id="markdown-toc-变量对象variable-object">变量对象(variable object)</a>        <ul>
+          <li><a href="#global-variable-object" id="markdown-toc-global-variable-object">Global Variable Object</a></li>
+          <li><a href="#function-variable-object" id="markdown-toc-function-variable-object">Function variable object</a></li>
+          <li><a href="#处理ec-code对2个阶段" id="markdown-toc-处理ec-code对2个阶段">处理EC code对2个阶段</a>            <ul>
+              <li><a href="#1进入ec" id="markdown-toc-1进入ec">1.进入EC</a></li>
+            </ul>
+          </li>
+          <li><a href="#2-代码执行" id="markdown-toc-2-代码执行">2. 代码执行</a></li>
+        </ul>
+      </li>
+      <li><a href="#没有块级作用域" id="markdown-toc-没有块级作用域">没有块级作用域</a></li>
+    </ul>
+  </li>
+  <li><a href="#garbage-collection" id="markdown-toc-garbage-collection">Garbage Collection</a>    <ul>
+      <li><a href="#内存泄漏" id="markdown-toc-内存泄漏">内存泄漏</a></li>
+    </ul>
+  </li>
+  <li><a href="#other-refs" id="markdown-toc-other-refs">Other refs:</a></li>
+</ul>
+
+<h3 id="执行环境作用域">执行环境，作用域</h3>
+<h4 id="执行环境execution-context">执行环境(Execution context)：</h4>
+<p>执行环境(Execution context)定义了变量或者函数有权访问的其他数据，决定了他们各自的行为。
+全局执行环境是最外围的一个执行环境，在web浏览器中，全局执行环境被默认为是指window对象。因此所有的全局变量和函数都是作为window对象的属性和方法创建的。全局执行环境直到应用程序推出才会被销毁（例如关闭网页或者浏览器的时候）。</p>
+
+<p>每个函数都有自己的执行环境。当执行流进入一个函数的时候，函数的环境就会被推入一个环境栈中，而在函数执行之后，栈将其环境弹出。把控制权返回给之前的执行环境了。
+拿一个例子举例说明：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="s2">"blue"</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">changeColor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">anotherColor</span> <span class="o">=</span> <span class="s2">"red"</span><span class="p">;</span>
+    <span class="kd">function</span> <span class="nx">swapColors</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">tempColor</span> <span class="o">=</span> <span class="nx">anotherColor</span><span class="p">;</span>
+        <span class="nx">anotherColor</span> <span class="o">=</span> <span class="nx">color</span><span class="p">;</span>
+        <span class="nx">color</span> <span class="o">=</span> <span class="nx">tempColor</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nx">swapColors</span><span class="p">();</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">anotherColor</span><span class="p">);</span> <span class="c1">//"blue"</span>
+<span class="p">}</span>
+
+<span class="nx">changeColor</span><span class="p">();</span>
+
+<span class="nx">alert</span><span class="p">(</span><span class="nx">color</span><span class="p">);</span> <span class="c1">//"red"</span>
+
+</code></pre>
+</div>
+<p>这里是先把全局执行环境(EC)放进stack中，然后开始执行其中的可执行代码，遇到｀changeColor()｀, 把<code class="highlighter-rouge">function changeColor</code> 的EC放入stack,最后把<code class="highlighter-rouge">function swapColors</code> 的EC放入stack。</p>
+
+<p><img src="/assets/images/flowchart_for_ec.png" alt="" class="img-responsive" /></p>
+
+<p>在执行过程中，因为<code class="highlighter-rouge">swapColors EC</code>是栈顶，先访问<code class="highlighter-rouge">swapColors EC</code>。然后，执行完<code class="highlighter-rouge">swapColors()</code> function后，将<code class="highlighter-rouge">swapColors EC</code>从stack 弹出。然后再执行<code class="highlighter-rouge">changeColor()</code>,执行完毕将<code class="highlighter-rouge">changeColor EC</code> 弹出。</p>
+
+<p><img src="/assets/images/flowchart_for_ec_1.png" alt="" class="img-responsive" /></p>
+
+<h4 id="变量对象variable-object">变量对象(variable object)</h4>
+<p>每个执行环境都有一个与该环境相关联的变量对象（variable object）。环境EC中定义的所有变量和函数都是保存在这个对象中的。如果变量与EC相关，那变量自己应该知道它的数据存储在哪里，并且知道如何访问。这种机制称为变量对象(variable object)。</p>
+<blockquote>
+  <p>变量对象(缩写为VO)是一个与执行上下文相关的特殊对象，它存储着在上下文中声明的以下内容：<br />
+  变量 (var, 变量声明);<br />
+  函数声明 (FunctionDeclaration, 缩写为FD);<br />
+  函数的形参</p>
+</blockquote>
+
+<p>举例来说，我们可以用普通的ECMAScript对象来表示一个变量对象：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">VO</span> <span class="o">=</span> <span class="p">{};</span>
+</code></pre>
+</div>
+<p>VO是EC的一个属性</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">activeExecutionContext</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">VO</span><span class="p">:</span> <span class="p">{</span>
+    <span class="c1">// 上下文数据（var, FD, function arguments)</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+<p>当我们声明一个变量或一个函数的时候，和我们创建VO新属性的时候一样没有别的区别（即：有名称以及对应的值）。</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+ 
+<span class="kd">function</span> <span class="nx">test</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="p">};</span>
+ 
+<span class="nx">test</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+
+</code></pre>
+</div>
+
+<p>对应的变量对象是：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="c1">//全局上下文的变量对象</span>
+ <span class="nx">VO</span><span class="p">(</span><span class="nx">globalContext</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">a</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="na">test</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">reference</span> <span class="nx">to</span> <span class="kd">function</span><span class="o">&gt;</span>
+<span class="p">};</span>
+ 
+<span class="c1">// test函数上下文的变量对象</span>
+<span class="nx">VO</span><span class="p">(</span><span class="nx">test</span> <span class="nx">functionContext</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">x</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+  <span class="na">b</span><span class="p">:</span> <span class="mi">20</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+
+<p>盗用<a href="https://segmentfault.com/u/charming_58a6884da06c0">Charming</a>画的图来说明Variable object 的创建过程，
+<img src="https://sfault-image.b0.upaiyun.com/321/485/3214852543-5906c1cf61eb4_articlex" alt="" class="img-responsive" /></p>
+
+<p>上面就是变量对象的一个创建过程，这个过程的解释：</p>
+
+<blockquote>
+  <ol>
+    <li>建立arguments对象。检查当前上下文中的参数，建立该对象下的属性与属性值。</li>
+    <li>检查当前上下文的函数声明，也就是使用function关键字声明的函数。在变量对象中以函数名建立一个属性，属性值为指向该函数所在内存地址的引用。如果函数名的属性已经存在，那么该属性将会被新的引用所覆盖。</li>
+    <li>检查当前上下文中的变量声明，每找到一个变量声明，就在变量对象中以变量名建立一个属性，属性值为undefined。如果该变量名的属性已经存在，为了防止同名的函数被修改为undefined，则会直接跳过，原属性值不会被修改。
+参考<a href="https://segmentfault.com/a/1190000009247123">变量对象和执行环境的理解</a> 的代码解释。</li>
+  </ol>
+</blockquote>
+
+<h5 id="global-variable-object">Global Variable Object</h5>
+<blockquote>
+  <p>全局对象(Global object) 是在进入任何执行上下文之前就已经创建了的对象；这个对象只存在一份，它的属性在程序中任何地方都可以访问，全局对象的生命周期终止于程序退出那一刻。</p>
+</blockquote>
+
+<p>全局对象初始创建阶段将Math、String、Date、parseInt作为自身属性，等属性初始化，同样也可以有额外创建的其它对象作为属性（其可以指向到全局对象自身）。例如，在DOM中，全局对象的window属性就可以引用全局对象自身(当然，并不是所有的具体实现都是这样)：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">global</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">Math</span><span class="p">:</span> <span class="o">&lt;</span><span class="p">...</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="na">String</span><span class="p">:</span> <span class="o">&lt;</span><span class="p">...</span><span class="o">&gt;</span>
+  <span class="p">...</span>
+  <span class="p">...</span>
+  <span class="na">window</span><span class="p">:</span> <span class="nx">global</span> <span class="c1">//引用自身</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+<p>在Global EC中的VO变量对象就是全局对象<code class="highlighter-rouge">global</code>本身：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">VO</span><span class="p">(</span><span class="nx">globalContext</span><span class="p">)</span> <span class="o">===</span> <span class="nx">global</span><span class="p">;</span>
+</code></pre>
+</div>
+<p>基于这个原理，在全局上下文中声明的对应，我们才可以间接通过全局对象的属性来访问它（例如，事先不知道变量名称）。</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">'test'</span><span class="p">);</span>
+ 
+<span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span> <span class="c1">// 直接访问，在VO(globalContext)里找到："test"</span>
+ 
+<span class="nx">alert</span><span class="p">(</span><span class="nb">window</span><span class="p">[</span><span class="s1">'a'</span><span class="p">]);</span> <span class="c1">// 间接通过global访问：global === VO(globalContext): "test"</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="k">this</span><span class="p">.</span><span class="nx">a</span><span class="p">);</span> <span class="c1">// true</span>
+ 
+<span class="kd">var</span> <span class="nx">aKey</span> <span class="o">=</span> <span class="s1">'a'</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nb">window</span><span class="p">[</span><span class="nx">aKey</span><span class="p">]);</span> <span class="c1">// 间接通过动态属性名称访问："test"</span>
+</code></pre>
+</div>
+
+<h5 id="function-variable-object">Function variable object</h5>
+<p>在函数执行上下文中，VO是不能直接访问的，此时由活动对象(activation object,缩写为AO)扮演VO的角色。</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">VO</span><span class="p">(</span><span class="nx">functionContext</span><span class="p">)</span> <span class="o">===</span> <span class="nx">AO</span><span class="p">;</span>
+</code></pre>
+</div>
+<p>AO是在进入函数EC时被创建的，通过函数的arguments属性初始化。arguments属性的值是Arguments对象：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code> <span class="nx">AO</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">arguments</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">ArgO</span><span class="o">&gt;</span>
+ <span class="p">};</span>
+</code></pre>
+</div>
+
+<h5 id="处理ec-code对2个阶段">处理EC code对2个阶段</h5>
+
+<p>执行上下文的代码被分成两个基本的阶段来处理：</p>
+<ol>
+  <li>进入EC</li>
+  <li>执行代码
+Variable Object的修改变化与这两个阶段紧密相关。</li>
+</ol>
+
+<h6 id="1进入ec">1.进入EC</h6>
+<p>进入EC，即执行code前，VO已经包含属性：</p>
+<ul>
+  <li>arguments声明,包括值</li>
+  <li>函数声明(Function Declaration)</li>
+  <li>变量声明(var)</li>
+</ul>
+
+<p>例子：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">test</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="kd">function</span> <span class="nx">d</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">_e</span><span class="p">()</span> <span class="p">{};</span>
+  <span class="p">(</span><span class="kd">function</span> <span class="nx">x</span><span class="p">()</span> <span class="p">{});</span>
+<span class="p">}</span>
+ 
+<span class="nx">test</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="c1">// call</span>
+</code></pre>
+</div>
+<p>当test() 的EC被call，AO为</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">AO</span><span class="p">(</span><span class="nx">test</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">a</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="c1">// a 是arguments，已经传值</span>
+  <span class="na">b</span><span class="p">:</span> <span class="kc">undefined</span><span class="p">,</span>
+  <span class="na">c</span><span class="p">:</span> <span class="kc">undefined</span><span class="p">,</span>
+  <span class="na">d</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">reference</span> <span class="nx">to</span> <span class="nx">FunctionDeclaration</span> <span class="s2">"d"</span><span class="o">&gt;</span>
+  <span class="na">e</span><span class="p">:</span> <span class="kc">undefined</span>
+  <span class="c1">//此处没有x，因为x is FunctionExpression， 不影响VO</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+<h5 id="2-代码执行">2. 代码执行</h5>
+<p>AO/VO在代码解释期间被修改如下：</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">AO</span><span class="p">[</span><span class="s1">'c'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nx">AO</span><span class="p">[</span><span class="s1">'e'</span><span class="p">]</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">reference</span> <span class="nx">to</span> <span class="nx">FunctionExpression</span> <span class="s2">"_e"</span><span class="o">&gt;</span><span class="p">;</span>
+
+</code></pre>
+</div>
+<blockquote>
+  <p>注：因为FunctionExpression“_e”保存到了已声明的变量“e”上，所以它仍然存在于内存中。而FunctionExpression “x”却不存在于AO/VO中，也就是说如果我们想尝试调用“x”函数，不管在函数定义之前还是之后，都会出现一个错误“x is not defined”，未保存的函数表达式只有在它自己的定义或递归中才能被调用。</p>
+</blockquote>
+
+<ul>
+  <li>作用域链(scope chain)</li>
+</ul>
+
+<h4 id="没有块级作用域">没有块级作用域</h4>
+<p>其他类C语言中，由花括号封闭的代码块都有自己的作用域。</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="s2">"blue"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">alert</span><span class="p">(</span><span class="nx">color</span><span class="p">);</span> <span class="c1">//blue</span>
+</code></pre>
+</div>
+<p>此处的color会被添加到当前执行环境。</p>
+
+<p>var声明的variable会自动被添加到最接近的作用域，对于函数来说，就是函数本身。如果初始化的时候没有用var，则会被添加到全局环境。</p>
+
+<p>在Javascript引用标识符(Literal)时，必须通过搜索确定Literal背后代表什么。Javascript从最近的Variable Object（就是环境）开始搜索，如果找到对变量的定义，就自动停止搜索，不然，再去更上一级对Variable Object去寻找。</p>
+
+<blockquote>
+  <p>注：变量查询是有代价的。很明显，访问局部变量比访问全局变量更快，因为不需要向上搜索。</p>
+</blockquote>
+
+<h3 id="garbage-collection">Garbage Collection</h3>
+
+<h4 id="内存泄漏">内存泄漏</h4>
+
+<h3 id="other-refs">Other refs:</h3>
+<ol>
+  <li><a href="https://segmentfault.com/a/1190000009247123">变量对象和执行环境的理解</a></li>
+  <li><a href="http://www.cnblogs.com/TomXu/archive/2012/01/16/2309728.html#!comments">深入理解JavaScript系列（12）：变量对象（Variable Object）</a></li>
+</ol>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/2017/08/02/javascript-notes-1/">Javascript高级程序设计笔记1
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/2017/08/02/javascript-notes-1/">Javascript高级程序设计笔记1</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/2017/08/04/javascript-notes-2/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/2017/08/04/javascript-notes-2/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//yumingren.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             写字的地方 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/renyuming1" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:renyuming1@gmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>   
+            <!--<a href="https://www.zhihu.com/people/renyuming" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  -->
+            <!--<a href="https://twitter.com/renyuming" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  -->
+            <!--<a href="https://www.facebook.com/renyuming" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   -->
+            <!--<a href="https://www.linkedin.com/in/renyuming" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  -->
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

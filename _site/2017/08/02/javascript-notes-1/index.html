@@ -141,6 +141,8 @@
                 
                     
                 
+                    
+                
             </ul>
         </nav>
     </div>
@@ -231,7 +233,7 @@
               <li><a href="#object" id="markdown-toc-object">Object</a></li>
             </ul>
           </li>
-          <li><a href="#typeof" id="markdown-toc-typeof">typeof</a></li>
+          <li><a href="#如何判断类型" id="markdown-toc-如何判断类型">如何判断类型？</a></li>
         </ul>
       </li>
       <li><a href="#操作符" id="markdown-toc-操作符">操作符</a>        <ul>
@@ -585,8 +587,32 @@ Not a number, 表示一个本来要返回数值的操作数未返回的情况，
 <h5 id="object">Object</h5>
 <p>Object本质上是由一组无序的名值组成。</p>
 
-<h4 id="typeof">typeof</h4>
-<p>typeof是</p>
+<h4 id="如何判断类型">如何判断类型？</h4>
+<ol>
+  <li>
+    <p>基本类型：
+typeof</p>
+  </li>
+  <li>
+    <p>复杂类型：</p>
+  </li>
+</ol>
+
+<p>instanceof</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">result</span> <span class="o">=</span> <span class="nx">variable</span> <span class="k">instanceof</span> <span class="nx">constructor</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+<span class="nx">person</span> <span class="k">instanceof</span> <span class="nb">Object</span><span class="p">;</span> <span class="c1">// true</span>
+<span class="kd">var</span> <span class="nx">no_person</span><span class="p">;</span>
+<span class="nx">no_person</span> <span class="k">instanceof</span> <span class="nb">Object</span><span class="p">;</span> <span class="c1">// false</span>
+<span class="kc">null</span> <span class="k">instanceof</span> <span class="nb">Object</span><span class="p">;</span> <span class="c1">//false, as null is a basic type</span>
+
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">"person"</span><span class="p">;</span>
+<span class="nx">a</span> <span class="k">instanceof</span> <span class="nb">String</span><span class="p">;</span> <span class="c1">// false, 基本类型不能使用instanceof, 用typeof</span>
+</code></pre>
+</div>
+
+<p>所有引用类型的值都是Object的实例.</p>
 
 <h3 id="操作符">操作符</h3>
 <h4 id="相等">相等</h4>
@@ -727,7 +753,33 @@ Not a number, 表示一个本来要返回数值的操作数未返回的情况，
             
                 
                     
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/2017/08/04/javascript-notes-2/">Javascript高级程序设计笔记2
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
                 
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
             
                 
                     
@@ -756,47 +808,6 @@ Not a number, 表示一个本来要返回数值的操作数未返回的情况，
             
         
             
-            
-                
-                    
-                
-            
-        
-            
-            
-                
-                    
-                
-            
-                
-                    
-                
-            
-        
-            
-            
-                
-                    
-                
-            
-                
-                    
-                
-            
-                
-                    
-                
-            
-        
-            
-            
-                
-                    
-                
-            
-                
-                    
-                
             
                 
                     
@@ -841,6 +852,23 @@ Not a number, 表示一个本来要返回数值的操作数未返回的情况，
                 
             
         
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+        
+            </ul>
         
 
         <div class="post-recent">
@@ -851,6 +879,8 @@ Not a number, 表示一个本来要返回数值的操作数未返回的情况，
     </div>
     <div class="nex">
 
+        
+        <p><strong>下一篇</strong> <a href="/2017/08/04/javascript-notes-2/">Javascript高级程序设计笔记2</a></p>
         
     </div>
 </div>
@@ -898,6 +928,8 @@ Not a number, 表示一个本来要返回数值的操作数未返回的情况，
                     Content
                 </div>
                 <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
                     
                     <li><a href="#comments">Comments</a></li>
                 </ul>

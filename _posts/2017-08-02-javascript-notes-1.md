@@ -267,8 +267,28 @@ String(value4); // "undefined"
 ##### Object
 Object本质上是由一组无序的名值组成。
 
-#### typeof
-typeof是
+#### 如何判断类型？
+1. 基本类型：
+typeof
+
+2. 复杂类型：
+
+instanceof
+
+```javascript
+result = variable instanceof constructor;
+var person = new Object();
+person instanceof Object; // true
+var no_person;
+no_person instanceof Object; // false
+null instanceof Object; //false, as null is a basic type
+
+var a = "person";
+a instanceof String; // false, 基本类型不能使用instanceof, 用typeof
+```
+
+所有引用类型的值都是Object的实例.
+
 
 
 

@@ -5,9 +5,24 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Aug 2017 11:01:55 -0700</pubDate>
-    <lastBuildDate>Fri, 04 Aug 2017 11:01:55 -0700</lastBuildDate>
+    <pubDate>Fri, 04 Aug 2017 16:45:11 -0700</pubDate>
+    <lastBuildDate>Fri, 04 Aug 2017 16:45:11 -0700</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Javascript高级程序设计笔记2</title>
+        <description>
+</description>
+        <pubDate>Fri, 04 Aug 2017 04:10:26 -0700</pubDate>
+        <link>http://localhost:4000/2017/08/04/javascript-notes-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/04/javascript-notes-2/</guid>
+        
+        <category>Javascript</category>
+        
+        
+        <category>Javascript</category>
+        
+      </item>
     
       <item>
         <title>Javascript高级程序设计笔记1</title>
@@ -261,38 +276,6 @@ command Palette 支持模糊匹配
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>Git 如何 clone 非 master 分支的代码</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#问题描述&quot; id=&quot;markdown-toc-问题描述&quot;&gt;问题描述&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;问题描述&quot;&gt;问题描述&lt;/h2&gt;
-
-我们每次使用命令
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@gitlab.xxx.com:xxxxx.git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在&lt;code class=&quot;highlighter-rouge&quot;&gt;daily/1.4.1&lt;/code&gt;分支上，我们希望拿到这个分支上的代码。
-
-</description>
-        <pubDate>Thu, 07 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/07/07/git-clone-not-master-branch/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/07/07/git-clone-not-master-branch/</guid>
-        
-        <category>Git</category>
-        
-        <category>GitHub</category>
-        
-        <category>分支</category>
-        
-        
-        <category>GitHub</category>
         
       </item>
     
