@@ -14,25 +14,25 @@ author: yuming
 ## 西雅图咖啡地图（待更新）
 
 
-![](/assets/images/seattle_coffee_map.png){:class="img-responsive"}
+![](/assets/images/coffee_map/seattle_coffee_map.png){:class="img-responsive"}
 
-![](/assets/images/elm_coffee_roasters.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/elm_coffee_roasters.jpg){:class="img-responsive"}
 
-![](/assets/images/milstead_co.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/milstead_co.jpg){:class="img-responsive"}
 
-![](/assets/images/cherry_street_public_coffee.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/cherry_street_public_coffee.jpg){:class="img-responsive"}
 
-![](/assets/images/cherry_street_public_coffee_1.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/cherry_street_public_coffee_1.jpg){:class="img-responsive"}
 
-![](/assets/images/cherry_street_public_coffee_2.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/cherry_street_public_coffee_2.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_coffee.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/Meow_coffee.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_Coffee1.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/Meow_Coffee1.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_coffee2.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/Meow_coffee2.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_coffee3.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/Meow_coffee3.jpg){:class="img-responsive"}
 
 
 ## ref
