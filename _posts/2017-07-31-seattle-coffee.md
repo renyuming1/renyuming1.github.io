@@ -14,7 +14,7 @@ author: yuming
 ## 西雅图咖啡地图（待更新）
 
 
-![](/assets/images/coffee_map/seattle_coffee_map.png){:class="img-responsive"}
+![](/assets/images/seattle_coffee_map.png){:class="img-responsive"}
 
 ![](/assets/images/coffee_map/elm_coffee_roasters.jpg){:class="img-responsive"}
 
