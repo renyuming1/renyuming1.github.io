@@ -16,23 +16,23 @@ author: yuming
 
 ![](/assets/images/seattle_coffee_map.png){:class="img-responsive"}
 
-![](/assets/images/elm_coffee_roasters.png){:class="img-responsive"}
+![](/assets/images/elm_coffee_roasters.jpg){:class="img-responsive"}
 
-![](/assets/images/milstead_co.png){:class="img-responsive"}
+![](/assets/images/milstead_co.jpg){:class="img-responsive"}
 
-![](/assets/images/cherry_street_public_coffee.png){:class="img-responsive"}
+![](/assets/images/cherry_street_public_coffee.jpg){:class="img-responsive"}
 
-![](/assets/images/cherry_street_public_coffee_1.png){:class="img-responsive"}
+![](/assets/images/cherry_street_public_coffee_1.jpg){:class="img-responsive"}
 
-![](/assets/images/cherry_street_public_coffee_2.png){:class="img-responsive"}
+![](/assets/images/cherry_street_public_coffee_2.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_coffee.png){:class="img-responsive"}
+![](/assets/images/Meow_coffee.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_Coffee1.png){:class="img-responsive"}
+![](/assets/images/Meow_Coffee1.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_coffee2.png){:class="img-responsive"}
+![](/assets/images/Meow_coffee2.jpg){:class="img-responsive"}
 
-![](/assets/images/Meow_coffee3.png){:class="img-responsive"}
+![](/assets/images/Meow_coffee3.jpg){:class="img-responsive"}
 
 
 ## ref
