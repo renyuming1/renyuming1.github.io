@@ -16,6 +16,24 @@ author: yuming
 
 ![](/assets/images/seattle_coffee_map.png){:class="img-responsive"}
 
+![](/assets/images/elm_coffee_roasters.png){:class="img-responsive"}
+
+![](/assets/images/milstead_co.png){:class="img-responsive"}
+
+![](/assets/images/cherry_street_public_coffee.png){:class="img-responsive"}
+
+![](/assets/images/cherry_street_public_coffee_1.png){:class="img-responsive"}
+
+![](/assets/images/cherry_street_public_coffee_2.png){:class="img-responsive"}
+
+![](/assets/images/Meow_coffee.png){:class="img-responsive"}
+
+![](/assets/images/Meow_Coffee1.png){:class="img-responsive"}
+
+![](/assets/images/Meow_coffee2.png){:class="img-responsive"}
+
+![](/assets/images/Meow_coffee3.png){:class="img-responsive"}
+
 
 ## ref
 - [咖啡地图 “咖啡”遇上西雅图，好喝夜未眠](https://zhuanlan.zhihu.com/p/27704877)
