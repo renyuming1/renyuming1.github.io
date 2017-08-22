@@ -16,15 +16,31 @@ author: yuming
 
 ![](/assets/images/seattle_coffee_map.png){:class="img-responsive"}
 
-![](/assets/images/coffee_map/elm_coffee_roasters.jpg){:class="img-responsive"}
 
-![](/assets/images/coffee_map/milstead_co.jpg){:class="img-responsive"}
++ Elm Coffee roasters
+
+![](/assets/images/coffee_map/elm_coffee_roasters.jpeg){:class="img-responsive"}
+
++ Milstead Co
+
+![](/assets/images/coffee_map/milstead_co.jpeg){:class="img-responsive"}
+Google旁边的店，做咖啡店小姐姐特别帅气。
+
+
+
++ Cafe Ladro
+![](/assets/images/coffee_map/cafe_Ladro.jpg){:class="img-responsive"}
+
+
++ Cherry Street Public Coffee
 
 ![](/assets/images/coffee_map/cherry_street_public_coffee.jpg){:class="img-responsive"}
 
 ![](/assets/images/coffee_map/cherry_street_public_coffee_1.jpg){:class="img-responsive"}
 
 ![](/assets/images/coffee_map/cherry_street_public_coffee_2.jpg){:class="img-responsive"}
+
++ Meow Coffee
 
 ![](/assets/images/coffee_map/Meow_coffee.jpg){:class="img-responsive"}
 
