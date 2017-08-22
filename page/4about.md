@@ -21,12 +21,8 @@ Enjoy
 
 * GitHub：[Yuming Ren](https://github.com/renyuming1)
 * email：renyuming1@gmail.com
-* [Weibo](http://weibo.com/3115521wh)
-* [知乎](https://www.zhihu.com/people/gaohaoyang)
-* [Facebook](https://www.facebook.com/gaohaoyang.water)
-* [Twitter](https://twitter.com/gaohaoyang126)
-* [豆瓣](https://www.douban.com/people/42525035/)
-* [豆瓣音乐人-浩阳的小站](https://site.douban.com/haoyangaiyinyue/)
+* [知乎](https://www.zhihu.com/people/yu-ren-27-46)
+* [豆瓣](https://www.douban.com/people/67599597/)
 
 ## About the blog
 
