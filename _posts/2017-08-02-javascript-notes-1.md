@@ -14,23 +14,82 @@ author: yuming
 
 ## HTML in Javascript
 
-### \<script>
-script属性：
-1. async: 表示立即下载脚本，但不妨碍页面其他操作，只对外部脚本有效。 
+### <script>
+
+#### script代码块：
+Javascript在HMTL中的代码块是由`<script type="text/javascript"></script>`tag分割的代码段。需要注意的是：
+> JS是按照代码块来进行编译和执行的，代码块间相互独立，但变量和方法共享。
+```html
+<script type="text/javascript">
+      alert(block2Msg); //typeError
+      var block1Msg = "Here is block 1 variable";
+</script>
+<script type="text/javascript">
+      var block2Msg = "Here is block 2 variable";
+      alert(block1Msg); //"Here is block 1 variable"
+</script>
+```
+可见，代码块之间的变量和方法是共享的。那为什么此处的`alert(block2Msg);`会是typeError呢？如果我们把这两个代码块写在一起，按照变量声明提起的原则，应该alert的是`undefined`才对。
+```html
+<script type="text/javascript">
+      alert(block2Msg); //undefined
+      var block1Msg = "Here is block 1 variable";
+      var block2Msg = "Here is block 2 variable";
+      alert(block1Msg); //"Here is block 1 variable"
+</script>
+```
+事实确实也是这样的。那这两者之间的区别是哪里来的呢？原因就在于，`<script>`代码块在HTML文档流中的顺序执行：
+**浏览器在解析HTML文档流时，如果遇到一个`<script>`标签，则JavaScript解释器会等到这个代码块都加载完后，先对代码块进行预编译，然后再执行。执行完毕后，浏览器会继续解析下面的HTML文档流，同时JavaScript解释器也准备好处理下一个代码块。**
+所以说，当执行到第一个代码块时，script里并没有对block1Msg的声明，也就自然不会有变量声明提起的问题。
+
+
+那这意味着什么呢？
+- 如果你的网站有很慢的脚本在页面较前部分被加载，你的网页加载就会被显著拖慢。
+- 后加载的脚本可以依赖先加载的脚本。
+- 当前脚本之前的 DOM 节点才可以在当前 JavaScript 中被访问。
+
+这三点使得我们需要考虑script代码块在HTML中的放置顺序。那我们能不能不通过更改HTML的放置顺序来改变script的执行顺序呢？答案是可以的。
+
+#### 如何改变script的执行顺序？
+为了安全起见，我们一般在页面初始化完毕之后才允许JavaScript代码执行，这样可以避免网速对JavaScript执行的影响，同时也避开了HTML文档流对于JavaScript执行的限制。
+`<script>`的若干属性会影响代码的执行顺序，比如`async`, `defer`。具体内容放到下一节。此处我们着重讨论的load的过程。
+
+#### script属性：
+1. async: 表示立即下载脚本，但不妨碍页面其他操作，只对外部脚本有效。 表示“先下载，不用马上执行，但是下载完后会执行”
    example：
    ```html
    <script type="text/javascript" async src="example1.js"></script>
    <script type="text/javascript" async src="example2.js"></script>
    ```
    理论上讲，example1.js与example2.js异步加载，所以不存在顺序。确保相互之间互不依赖。建议不要在加载期间修改DOM。
-   异步脚步会在页面load event前执行。
+   异步脚本会在页面load event前执行。因此，定义一个页面需要的变量或函数在`async`的代码中是不行的，因为你没有方法知道什么时候`async`代码将会被实际执行。
 2. charset: 通过src属性指定的代码的字符集。
-3. defer：与async相对，也是控制解析script的时间，只对外部脚本有效。
+3. defer：与async相对，也是控制解析script的时间，只对外部脚本有效。表示“等待页面解析完成之后执行”
    example：
    ```html
    <script type="text/javascript" defer = "defer" src="example1.js"></script>
    <script type="text/javascript" defer = "defer" src="example2.js"></script>
    ```
+   大致等价于将你的脚本绑定到`DOMContentedLoaded`事件，或者使用`jQuery.ready`。当这个代码被执行，`DOM`中的一切元素都可用。不同于`async`，所有加了`defer`的脚本将会按照它们出现在`TML`页面中的顺序执行，它只是推迟到`HTML`页面解析完毕后开始执行。
+
+
+   > defer vs async 
+   1、相同点:  
+    (1)、加载文件时不阻塞页面渲染；
+    (2)、对于inline的script无效；
+    (3)、使用这两个属性的脚本中不能调用document.write方法；
+    (4)、有脚本的onload的事件回调；
+    (5)、允许不定义属性值，仅仅使用属性名；
+    2、不同点
+
+    (1)、每一个async属性的脚本都在它下载结束之后立刻执行，同时会在window的load事件之前执行。所以就有可能出现脚本执行顺序被打乱的情况；
+
+    (2)、每一个defer属性的脚本都是在页面解析完毕之后，按照原本的顺序执行，同时会在document的DOMContentLoaded之前执行。
+
+ 
+
+
+
    > 注：最好只包含一个延迟脚本，理论上讲，example1.js会先于example2.js被执行。但是现实中，延迟脚本不一定按照顺序执行，比如我们并不知道example1.js还是example2.js谁会先被load.
 4. language: replaced by type
 5. type: 表示编写代码用的脚本语言的内容类型(MIME类型)。常用的MIME类型诸如`text/javascript`, `text/ecmascript`。服务器在传送JS文件时用的MIME类型通常为`application/x-javascript`，但是在type中设置可能导致脚本被忽略。
