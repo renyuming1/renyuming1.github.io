@@ -178,7 +178,7 @@ fabric.properties
 表示根目录下所有.iws结尾的文件
 
 鉴于这个例子没有覆盖所有case，我们再分析几个例子,假设一个jeklly project的根目录下文件如下
-```linux
+```bash
 LICENSE				_site
 README-zh-cn.md			assets
 README.md			css
