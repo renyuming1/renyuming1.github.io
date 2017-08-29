@@ -143,6 +143,64 @@ reserve pool:
 
 
 
+
+
+
+
+## git 
+
+Repository:
+记录文件或目录状态的地方，存储着内容修改的历史记录。
+
+### remote repo vs local repo
+remote: 配有专用的服务器，为了多人共享而建立的数据库。
+lcoal: 为了方便用户个人使用，在自己的机器上配置的数据库。
+
+origin/master, origin/HEAD, master
+
+
+
+### create a repo
+1. create a new repo
+2. clone a repo
+
+
+
+
+## git commit
+
+### Git 标准注解：
+> 第1行：提交修改内容的摘要
+> 第2行：空行
+> 第3行以后：修改的理由
+
+
+
+## git Tree:
+Index
+
+
+
+### pull 
+进行拉取(Pull) 操作就可以把远程数据库的内容更新到本地数据库。
+
+
+
+### clone
+执行克隆后，远程数据库的全部内容都会被下载。之后您在另一台机器的本地数据库上进行操作。
+
+Note: 克隆后的本地数据库的变更履历也会被复制，所以可以像原始的数据库一样进行查看记录或其他操作。
+
+
+
+## git branch:
+master:
+
+
+
+## ref:
+[猴子都能懂的GIT入门](http://backlogtool.com/git-guide/cn/intro/intro1_2.html)
+
 ref:
 
 [CGPointZero](http://www.jianshu.com/p/f5461fe1787a)
