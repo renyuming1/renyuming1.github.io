@@ -62,7 +62,7 @@
 var isFirstToggleMusic = true;
 function loadMusic() {
     if (isFirstToggleMusic && $('#music-content')) {
-        $('#music-content').html('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=899968490&auto=1&height=430"></iframe>');
+        $('#music-content').html('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="https:////music.163.com/outchain/player?type=0&id=899968490&auto=1&height=430"></iframe>');
         $('#music-control').css('background-image', 'url(/assets/images/music_logo_ani.gif)');
     }
     else
