@@ -55,3 +55,32 @@
 // 就再次回到这列车上
 // 我们谈天说地
 // 把酒言欢，赠予你新路途纹银
+
+
+//urls
+$url_0: url(/assets/images/music_logo.png);
+
+#music-container {
+	position: relative;
+	z-index: 1000;
+}
+
+#music-control {
+	display: block;
+	position: fixed;
+	top: 4rem;
+	right: 1rem;
+	width: 50px;
+	height: 50px;
+	background: $url_0;
+	background-size: 50px 50px; 
+	z-index: 1000；
+}
+
+#music-content {
+    position: fixed;
+    z-index:1000;               
+    right: 4rem;
+    top: 3.5rem;
+    z-index: 1000；
+}

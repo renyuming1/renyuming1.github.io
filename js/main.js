@@ -55,3 +55,26 @@
 (function() {
   var demoItems = document.querySelectorAll('.grid-item')
 }());
+
+
+/// music control
+// need to think a more generic and delegate way to realize it. 
+var isFirstToggleMusic = true;
+function loadMusic() {
+    if (isFirstToggleMusic && $('#music-content')) {
+        $('#music-content').html('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=899968490&auto=1&height=430"></iframe>');
+        $('#music-control').css('background-image', 'url(/assets/images/music_logo_ani.gif)');
+    }
+    else
+    {
+      console.log("remove music content");
+      $('#music-content').html('');
+      $('#music-control').css('background-image', 'url(/assets/images/music_logo.png)');
+    }
+    isFirstToggleMusic = !isFirstToggleMusic;
+}
+
+$('#music-control').click(function(){
+  loadMusic();
+});
+
