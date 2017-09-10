@@ -352,7 +352,16 @@ for 循环头部的 let 不仅将 i 绑定到了 for 循环的块中,事实上�
 
 先声明后赋值
 
-数声明会被提升,但是函数表达式却不会被提升。
+函数声明会被提升,但是函数表达式却不会被提升。
+```Javascript
+foo(); // 3
+function foo() { console.log( 1 );
+}
+var foo = function() { console.log( 2 );
+};
+function foo() { console.log( 3 );
+}
+```
 
 
 ## Dynamci Scope: this

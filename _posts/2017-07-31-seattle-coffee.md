@@ -30,10 +30,12 @@ Google旁边的店，做咖啡店小姐姐特别帅气。
 
 + Cafe Ladro
 ![](/assets/images/coffee_map/cafe_Ladro.jpg){:class="img-responsive"}
+![](/assets/images/coffee_map/cafe_Ladro1.jpg){:class="img-responsive"}
+
 
 
 + Cherry Street Public Coffee
-
+西雅图唯一女冠军的店
 ![](/assets/images/coffee_map/cherry_street_public_coffee.jpg){:class="img-responsive"}
 
 ![](/assets/images/coffee_map/cherry_street_public_coffee_1.jpg){:class="img-responsive"}
@@ -41,6 +43,7 @@ Google旁边的店，做咖啡店小姐姐特别帅气。
 ![](/assets/images/coffee_map/cherry_street_public_coffee_2.jpg){:class="img-responsive"}
 
 + Meow Coffee
+一家靠卖萌为生的咖啡店。咖啡口感不错，没有很酸。奶泡口感均匀细致。
 
 ![](/assets/images/coffee_map/Meow_coffee.jpg){:class="img-responsive"}
 
@@ -49,6 +52,35 @@ Google旁边的店，做咖啡店小姐姐特别帅气。
 ![](/assets/images/coffee_map/Meow_coffee2.jpg){:class="img-responsive"}
 
 ![](/assets/images/coffee_map/Meow_coffee3.jpg){:class="img-responsive"}
+
++ La Marzocco Cafe
+
+  ![](/assets/images/coffee_map/la_marzocco1.jpeg){:class="img-responsive"}
+
+  ![](/assets/images/coffee_map/la_marzocco2.jpeg){:class="img-responsive"}
+
+
+  有咖啡机器和黑胶唱片的咖啡店，与其说是咖啡店，更像是咖啡机厂商La Marzocco的展示店，里面有各种的老式黑胶唱片。
+  ![](/assets/images/coffee_map/la_marzocco3.jpeg){:class="img-responsive"}
+  当日拿铁，咖啡烘焙口感对我来说稍微有点酸。
+  ![](/assets/images/coffee_map/la_marzocco.jpeg){:class="img-responsive"}
+
++ Biscuit Bitch
+  DT著“名”的早餐店，最著名的其实不是咖啡，而是各种biscuit。最经典的easy Bitch和Hot mess Bitch。都特别的heavy。
+  ![](/assets/images/coffee_map/bitch_biscuit1.jpeg){:class="img-responsive"}
+  但是如此特立独行的店，自然卖的咖啡也不寻常。各种pumpkin的咖啡。
+  ![](/assets/images/coffee_map/bitch_biscuit.jpeg){:class="img-responsive"}
+  门口的自行车，之后共享单车可以搞这种，功能多样，比UHaul还适合。
+  ![](/assets/images/coffee_map/bitch_biscuit2.jpeg){:class="img-responsive"}
+
++ Victrola Coffee Roast
+  一家评价很高的店。卡布奇诺，口感偏酸。服务生小姐姐的发型太犀利。已经深情的🐶。
+  ![](/assets/images/coffee_map/victrola_coffee.png){:class="img-responsive"}
+
+  ![](/assets/images/coffee_map/victrola_coffee1.png){:class="img-responsive"}
+
+
+
 
 
 ## ref
