@@ -1,0 +1,33 @@
+Ruby Zombines
+
+
+Hash 
+b = {
+	id: 3,
+	status: "I just ate some delicious brains",
+	zombie: "Jim" 
+}
+
+
+read
+
+b[:status]
+
+Tweet.find(1)
+
+create
+
+
+
+t = TableName.new
+t.key = value
+t.save
+
+
+TableName.create(hash)
+
+
+where() return a array   
+where().first return a hash
+
+ 

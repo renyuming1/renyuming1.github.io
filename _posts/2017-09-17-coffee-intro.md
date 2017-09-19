@@ -97,6 +97,9 @@ author: yuming
 
 
 咖啡粉：
+
+![](/assets/images/coffee_note/coffee-bean-processor.png){:class="img-responsive"}
+
 咖啡豆
 调配
 烘焙
@@ -123,6 +126,9 @@ author: yuming
 包装：
 包装是为了防止咖啡粉氧化或者吸味，现在常用真空处理。
 
+
+## 咖啡口味
+![](/assets/images/coffee_note/coffee_wheel.jpg){:class="img-responsive"}
 
 意式咖啡和单品咖啡。
 

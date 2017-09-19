@@ -1,8 +1,8 @@
 ---
 layout: page
-title: ToDo
+title: To Do
 permalink: /todo/
-icon: fa-calendar-check-o
+icon: calendar-check-o
 type: page
 ---
 
@@ -18,12 +18,23 @@ type: page
 ## Javascript
 
 
+### Angular Js 3.0
+
+
+## Front end techs
+
+### HTTP
+
+
 ## Cloud
 
 
 ## Ruby
 
 ## Python
+
+
+panda
 
 ## Machine Learning
 
@@ -33,7 +44,7 @@ type: page
 ## Piano
 
 
-#
+
 # sport
 
 ## Ski

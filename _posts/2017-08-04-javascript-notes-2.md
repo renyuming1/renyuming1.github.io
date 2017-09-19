@@ -165,14 +165,13 @@ Variable Object的修改变化与这两个阶段紧密相关。
  - 变量声明(var)
  
  例子：
- ```javascript
+```javascript
 function test(a, b) {
   var c = 10;
   function d() {}
   var e = function _e() {};
   (function x() {});
 }
- 
 test(10); // call
 ```
 当test() 的EC被call，AO为
@@ -194,6 +193,9 @@ AO['e'] = <reference to FunctionExpression "_e">;
 
 ```
 > 注：因为FunctionExpression“_e”保存到了已声明的变量“e”上，所以它仍然存在于内存中。而FunctionExpression “x”却不存在于AO/VO中，也就是说如果我们想尝试调用“x”函数，不管在函数定义之前还是之后，都会出现一个错误“x is not defined”，未保存的函数表达式只有在它自己的定义或递归中才能被调用。
+
+
+
 
 
 - 作用域链(scope chain)
