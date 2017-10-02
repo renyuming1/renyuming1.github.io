@@ -80,8 +80,13 @@ Google旁边的店，做咖啡店小姐姐特别帅气。
   ![](/assets/images/coffee_map/victrola_coffee1.png){:class="img-responsive"}
 
 
-
-
++ Slate Coffee Roasters
+  点了著名的 coffee，
+   ![](/assets/images/coffee_map/slate_coffee_roasters_1.png){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_2.png){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_3.png){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_4.png){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_5.png){:class="img-responsive"}
 
 ## ref
 - [咖啡地图 “咖啡”遇上西雅图，好喝夜未眠](https://zhuanlan.zhihu.com/p/27704877)
