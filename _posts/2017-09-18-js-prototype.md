@@ -17,27 +17,12 @@ author: yuming
 
 
 
-
-prototype chain
-
-
 ## prototype linkage([[prototype]])
 
 `[[prototype]]`:几乎任何对象有一个[[prototype]]属性，在标准中，这是一个隐藏属性。该属性指向的是这个对象的原型。
 object的[[prototype]]属性是有什么决定的？答案是取决于构造object的方法。
-1. 字面量构造
-```javascript
-var car = {
-	wheels: 4,
-	drive: function() {
-		return "start the engine";
-	}
-}
-console.log(car.__proto__) // object Object.prototype
-```
-这种[[prototype]]指向Object.prototype
 
-2. 构造函数
+1. 构造函数
 
 ```javascript
 
@@ -51,6 +36,30 @@ var car = new Car();
 console.log(car.__proto__) // object Car.prototype
 ```
 由构造函数构造的对象，其[[prototype]]指向其构造函数的prototype属性指向的对象。每个函数都有一个prototype属性，其所指向的对象带有constructor属性，这一属性指向函数自身。
+
+2. 字面量构造
+```javascript
+var car = {
+	wheels: 4,
+	drive: function() {
+		return "start the engine";
+	}
+}
+console.log(car.__proto__) // object Object.prototype
+```
+这种[[prototype]]指向Object.prototype
+
+我们来解析一下这个字面量，其实这个构造方法等同于
+```javascript
+var car = new Object();
+car.wheels = 4;
+car.drive = function(){
+	return "start the engine";
+};
+
+```
+其实这个是用了Object构造函数来生成，所以，`[[Prototype]]` 就是Object.prototype
+
 
 3. Object.create()
 
@@ -67,7 +76,31 @@ var car = {
 var anotherCar = Object.create(car);
 console.log(anotherCar.__proto__) // object car
 ```
-此处指向car object。
+此处指向car object。为什么呢，`Object.create()` 的代码实际上做了如下的工作：
+```
+Object.prototype.create = function(a){  
+    var F = Function (){};  
+    F.prototype = a;  
+    return new F();  
+} 
+
+```
+我们来看我们的例子
+```javascript
+var anotherCar = function(car){  
+    var F = Function (){};  
+    F.prototype = car;  
+    return new F();  
+};
+
+```
+
+
+
+我们着重分析一下Object.create() 和 new 之间的区别：
+
+
+
 
 ## 如何get一个object的[[Prototype]]？
 
@@ -101,6 +134,17 @@ ES6标准化了`__proto__`, 但是之后可能还会deprecated，所以建议使
 
 
 ## shadowing
+
+
+
+
+
+
+## prototype chain
+原型链：
+我们知道，所有的js对象都始于一个object `Object.prototype`, 即所有prototype的查找都至于此。
+拿《你不知道Javascript》书中的一个例子举例：
+
 
 
 
@@ -140,7 +184,7 @@ console.log(Object.prototype); // 匿名object
 
 
 1. [Javascript Tutorial](http://www.javascripttutorial.net/javascript-prototype/)
-
+2. [Understanding the difference between Object.create() and new SomeFunction()](https://stackoverflow.com/questions/4166616/understanding-the-difference-between-object-create-and-new-somefunction)
 
 
 todo:
