@@ -14,7 +14,7 @@ author: yuming
 ## 西雅图咖啡地图（待更新）
 
 
-![](/assets/images/seattle_coffee_map.png){:class="img-responsive"}
+![](/assets/images/coffee_map/coffee_map_v1.1.png){:class="img-responsive"}
 
 
 + Elm Coffee roasters
