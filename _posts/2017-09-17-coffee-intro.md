@@ -130,8 +130,23 @@ author: yuming
 ## 咖啡口味
 ![](/assets/images/coffee_note/coffee_wheel.jpg){:class="img-responsive"}
 
+### 几个咖啡风味的专业名词
+酸度（acidity）：喝咖啡时，舌头边缘感受到的刺激。和柠檬那种酸不一样，而是咖啡提振味觉的一种清新、爽朗感，有时又被称为明亮度（brightness）。酸度是咖啡很重要的一个特质，没有酸度的咖啡味道会很平淡。
+
+香气（aroma）：咖啡冲煮后的香味，比舌头能感受到的味道更为多样化。常用来形容咖啡香气的形容词有果香（fruit-like）、土地芬芳（earthy）、烟熏（smoky）、花朵香（flowery）、莓果（berries）、坚果（nuts）等等。
+
+醇度（body）：咖啡在口中的口感，从清淡如水或脱脂乳，到浓稠如牛奶或奶油、糖浆都有。
+
+余味／风味（aftertaste）：和品酒的概念相似，指咖啡喝下去后嘴巴残留的味道。有些咖啡有可可或巧克力的余味，有些则有水果、莓果、坚果等等。
+
+平衡度（balance）：这是对咖啡整体味道的评价，好的咖啡豆味道均衡、有层次，并且香气柔和；不好的咖啡豆则通常只呈现单一味道。
+
+
+
+
 意式咖啡和单品咖啡。
 
 Ref：
 
 1. [爱上咖啡](https://read.douban.com/ebook/10901089/)
+2. [咖啡豆非學不可：基本入門知識](https://coffeehunter.tw/coffee-bean-guide/)

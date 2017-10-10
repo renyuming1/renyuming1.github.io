@@ -71,7 +71,7 @@ Google旁边的店，做咖啡店小姐姐特别帅气。
   但是如此特立独行的店，自然卖的咖啡也不寻常。各种pumpkin的咖啡。
   ![](/assets/images/coffee_map/bitch_biscuit.jpeg){:class="img-responsive"}
   门口的自行车，之后共享单车可以搞这种，功能多样，比UHaul还适合。
-  ![](/assets/images/coffee_map/bitch_biscuit2.jpeg){:class="img-responsive"}
+  ![](/assets/images/coffee_map/bitch_biscuit2.jpeg){:class="img-responsive iamge-rotate-90"}
 
 + Victrola Coffee Roast
   一家评价很高的店。卡布奇诺，口感偏酸。服务生小姐姐的发型太犀利。已经深情的🐶。
@@ -82,11 +82,11 @@ Google旁边的店，做咖啡店小姐姐特别帅气。
 
 + Slate Coffee Roasters
   点了著名的 coffee，
-   ![](/assets/images/coffee_map/slate_coffee_roasters_1.png){:class="img-responsive"}
-   ![](/assets/images/coffee_map/slate_coffee_roasters_2.png){:class="img-responsive"}
-   ![](/assets/images/coffee_map/slate_coffee_roasters_3.png){:class="img-responsive"}
-   ![](/assets/images/coffee_map/slate_coffee_roasters_4.png){:class="img-responsive"}
-   ![](/assets/images/coffee_map/slate_coffee_roasters_5.png){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_1.jpg){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_2.jpg){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_3.jpg){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_4.jpg){:class="img-responsive"}
+   ![](/assets/images/coffee_map/slate_coffee_roasters_6.png){:class="img-responsive"}
 
 ## ref
 - [咖啡地图 “咖啡”遇上西雅图，好喝夜未眠](https://zhuanlan.zhihu.com/p/27704877)
