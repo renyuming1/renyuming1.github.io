@@ -62,11 +62,19 @@ type: page
 
 ## <img src="https://png.icons8.com/dumbbell/android/24" title="Dumbbell" width="24" height="24"> 健身
 
-<i class="fa fa-square-o" aria-hidden="true"></i> 卧推
+<i class="fa fa-square-o" aria-hidden="true"></i> 卧推50kg
 
-<i class="fa fa-square-o" aria-hidden="true"></i> 硬拉70KG
+<i class="fa fa-square-o" aria-hidden="true"></i> 硬拉65kg
 
-<i class="fa fa-square-o" aria-hidden="true"></i> Pushups
+<i class="fa fa-check-square-o" aria-hidden="true"></i> 12 times深蹲65KG
+<i class="fa fa-square-o" aria-hidden="true"></i> 12 times深蹲70KG
+
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Fly 55kg
+<i class="fa fa-square-o" aria-hidden="true"></i> Fly 60kg
+
+<i class="fa fa-square-o" aria-hidden="true"></i> Pushups 
+
+<i class="fa fa-square-o" aria-hidden="true"></i> Pushups 
 
 ## <img src="https://png.icons8.com/climbing/ios7/25" title="Climbing" width="25" height="25"> 攀岩
 
