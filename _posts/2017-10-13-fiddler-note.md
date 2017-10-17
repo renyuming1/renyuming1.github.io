@@ -29,6 +29,8 @@ go to Fiddler Folder,run command：
 ```
 mono --arch=32 Fiddler.exe
 ```
+加attribute `--arch=32` 是因为目前Fiddler.exe 不支持64 bits, 兼容至32bits.
+
 
 
 

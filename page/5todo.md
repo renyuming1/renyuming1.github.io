@@ -75,6 +75,9 @@ type: page
 <i class="fa fa-square-o" aria-hidden="true"></i> Pushups 
 
 <i class="fa fa-square-o" aria-hidden="true"></i> Pushups 
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Body Fat 15
+<i class="fa fa-square-o" aria-hidden="true"></i> Body Fat 14
+<i class="fa fa-square-o" aria-hidden="true"></i> Body Fat 13
 
 ## <img src="https://png.icons8.com/climbing/ios7/25" title="Climbing" width="25" height="25"> 攀岩
 
@@ -94,6 +97,9 @@ type: page
 <i class="fa fa-check-square-o" aria-hidden="true"></i> 人类简史 <br>
 <i class="fa fa-square-o" aria-hidden="true"></i> 枪炮、病菌与钢铁 <br>
 <i class="fa fa-square-o" aria-hidden="true"></i> 万历十五年
+<i class="fa fa-square-o" aria-hidden="true"></i> 互联网+
+<i class="fa fa-square-o" aria-hidden="true"></i> 共享经济
+
 
 ## <img src="https://png.icons8.com/da-vinci/ios7/25" title="Da Vinci" width="25" height="25"> 艺术
 <i class="fa fa-square-o" aria-hidden="true"></i> 建筑十书 <br>
