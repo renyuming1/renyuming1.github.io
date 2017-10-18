@@ -62,7 +62,8 @@
 var isFirstToggleMusic = true;
 function loadMusic() {
     if (isFirstToggleMusic && $('#music-content')) {
-        $('#music-content').html('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="https://music.163.com/outchain/player?type=0&id=899968490&auto=1&height=430"></iframe>');
+        $('#music-content').html('<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/361026937&amp;color=%23313939&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>');      
+        //$('#music-content').html('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=899968490&auto=1&height=430"></iframe>');
         $('#music-control').css('background-image', 'url(/assets/images/music_logo_ani.gif)');
     }
     else

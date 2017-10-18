@@ -52,7 +52,10 @@ type: page
 
 ## <img src="https://png.icons8.com/drama/android/24" title="Drama" width="24" height="24"> 话剧
 
-<i class="fa fa-square-o" aria-hidden="true"></i>  恋爱的犀牛
+<i class="fa fa-square-o" aria-hidden="true"></i>  恋爱的犀牛 <br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i>  明星版雷雨 <br>
+<i class="fa fa-square-o" aria-hidden="true"></i>  人艺版窝头会馆 <br>
+<i class="fa fa-square-o" aria-hidden="true"></i>  一个无政府主义者的意外死亡 <br>
 
 # sport
 
@@ -74,9 +77,8 @@ type: page
 
 <i class="fa fa-square-o" aria-hidden="true"></i> Pushups 
 
-<i class="fa fa-square-o" aria-hidden="true"></i> Pushups 
-<i class="fa fa-check-square-o" aria-hidden="true"></i> Body Fat 15
-<i class="fa fa-square-o" aria-hidden="true"></i> Body Fat 14
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Body Fat 15 <br>
+<i class="fa fa-square-o" aria-hidden="true"></i> Body Fat 14 <br>
 <i class="fa fa-square-o" aria-hidden="true"></i> Body Fat 13
 
 ## <img src="https://png.icons8.com/climbing/ios7/25" title="Climbing" width="25" height="25"> 攀岩
@@ -96,8 +98,8 @@ type: page
 <i class="fa fa-check-square-o" aria-hidden="true"></i> 极简欧洲史 <br>
 <i class="fa fa-check-square-o" aria-hidden="true"></i> 人类简史 <br>
 <i class="fa fa-square-o" aria-hidden="true"></i> 枪炮、病菌与钢铁 <br>
-<i class="fa fa-square-o" aria-hidden="true"></i> 万历十五年
-<i class="fa fa-square-o" aria-hidden="true"></i> 互联网+
+<i class="fa fa-square-o" aria-hidden="true"></i> 万历十五年 <br>
+<i class="fa fa-square-o" aria-hidden="true"></i> 互联网+ <br>
 <i class="fa fa-square-o" aria-hidden="true"></i> 共享经济
 
 
