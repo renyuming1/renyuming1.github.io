@@ -2,7 +2,7 @@
 layout: post
 title:  Ruby work note
 date:   2017-08-28 21:06:05
-categories: Ruby, Rails
+categories: Ruby Rails
 tags: Ruby
 author: yuming
 ---

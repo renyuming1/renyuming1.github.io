@@ -17,6 +17,13 @@ author: yuming
 ![](/assets/images/coffee_map/coffee_map_v1.1.png){:class="img-responsive"}
 
 
+
+
+
+
+
+
+
 + Elm Coffee roasters
 
 ![](/assets/images/coffee_map/elm_coffee_roasters.jpeg){:class="img-responsive"}

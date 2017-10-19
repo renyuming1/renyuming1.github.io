@@ -1,12 +1,29 @@
+---
+layout: post
+title:  CSS3 选择器
+date:   2017-08-22 09:06:05
+categories: CSS
+tags: CSS
+author: yuming
+---
+
+* content
+{:toc}
 
 
-##选择器概述
+
+## 选择器概述
 
 
-###属性选择器
+### 属性选择器
 
 CSS2增加了属性选择器的特征，使用属性选择器时，需要声明属性与属性值，声明方法如下所示。
 [att=val] 
+
+
+
+
+
 
 <style type="text/css">
 [id=section1]{

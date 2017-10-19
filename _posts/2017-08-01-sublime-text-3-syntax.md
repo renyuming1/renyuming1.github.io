@@ -34,6 +34,13 @@ author: yuming
 > ctrl + p 快速定位并边界 如：@body  可以快速定位到当前文件的body标签
 > ctrl + h find/replace
 
+
+
+
+
+
+
+
 ### 快速查找
 功能1：快速查询文件（支持模糊匹配）并高亮显示不同的文件，如view/index.html表示
        查找view文件下的index.html

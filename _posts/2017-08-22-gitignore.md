@@ -4,6 +4,7 @@ title:  Git ignore 文件设置及常见语法
 date:   2017-08-22 09:06:05
 categories: Git
 tags: Git
+excerpt: Git Ignore 文件分析，设置与常用命令
 author: yuming
 ---
 

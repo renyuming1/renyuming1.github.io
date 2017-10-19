@@ -3,6 +3,7 @@ layout: post
 title:  GreaseMonkey 使用
 date:   2017-10-13 12:14:54
 categories: Web
+excerpt: GreaseMonkey一点小笔记
 tags: Web
 ---
 
@@ -10,7 +11,7 @@ tags: Web
 {:toc}
 
 
-### GreaseMonkey
+## GreaseMonkey
 
 
 user.js结尾
@@ -82,3 +83,5 @@ Greasemonkey 用它们来标记用户脚本的元数据段.
 
 
 如果您的用户脚本出错了，错误控制台会显示一条异常(exception)和一个行号。由于 Greasemonkey 将用户脚本插入到页面中，所以行号没有实际的用处，应该忽略这个行号。这并不是您的用户脚本中发生异常的行号。 
+
+## ref:

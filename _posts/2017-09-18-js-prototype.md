@@ -10,11 +10,7 @@ author: yuming
 * content
 {:toc}
 
-
-
-
 # Object的prototype
-
 
 
 ## prototype linkage([[prototype]])
@@ -23,6 +19,13 @@ author: yuming
 object的[[prototype]]属性是有什么决定的？答案是取决于构造object的方法。
 
 1. 构造函数
+
+
+
+
+
+
+
 
 ```javascript
 

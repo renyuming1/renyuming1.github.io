@@ -4,6 +4,7 @@ title:  Javascript的函数表达式
 date:   2017-08-08 19:10:26
 categories: Javascript
 tags: Javascript
+excerpt: Javascript函数特征，递归，闭包等
 author: yuming
 ---
 

@@ -4,6 +4,7 @@ title:  Javascript高级程序设计笔记2
 date:   2017-08-04 11:10:26
 categories: Javascript
 tags: Javascript
+excerpt: Javascript执行环境和作用域,变量对象，作用域链，内存管理 
 author: yuming
 ---
 
