@@ -14,7 +14,7 @@ type: page
 <iframe src="https://githubbadge.appspot.com/renyuming1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 
 
-* 2016.10.17 met
+* 2013.06.25 met
 * 2016.12.12 Amazon
 
 
