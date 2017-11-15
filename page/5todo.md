@@ -47,12 +47,12 @@ type: page
 ## <img class="icon icons8-Piano" width="24" height="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAtklEQVRoge2XUQqDMBBE98g9ikfyBnqj9rMtriHrpDgp78GCDGayD7+MAPgZW0Q8J58tDJYYNe+HSUHEDUTcQMQNRNxAxA1E3EDEDUTcOIjMPrcvMFykxeHQxVztbXUgMmKRW0VWIVd7Wx1dIvtJcTVXezNKIutJcTVXezMQ6bmwdxH1fAQiiAzpzbgssgi52ptRElk+3nsIudqbURJxBhE3EHEDETf+V2T2+fobm3X2xhcDUHgBm2GqGAY5/1cAAAAASUVORK5CYII=" >  Piano
 
 ## <img src="https://png.icons8.com/drums/ios7/25" title="Drums" width="25" height="25"> Concerts
-<i class="fa fa-square-o" aria-hidden="true"></i>  五月天 <br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i>  五月天 <br>
 <i class="fa fa-check-square-o" aria-hidden="true"></i>  李荣浩
 
 ## <img src="https://png.icons8.com/drama/android/24" title="Drama" width="24" height="24"> 话剧
 
-<i class="fa fa-square-o" aria-hidden="true"></i>  恋爱的犀牛 <br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i>  恋爱的犀牛 <br>
 <i class="fa fa-check-square-o" aria-hidden="true"></i>  明星版雷雨 <br>
 <i class="fa fa-square-o" aria-hidden="true"></i>  人艺版窝头会馆 <br>
 <i class="fa fa-square-o" aria-hidden="true"></i>  一个无政府主义者的意外死亡 <br>
