@@ -10,6 +10,7 @@ author: yuming
 * content
 {:toc}
 
+![](/assets/images/rhio/love_rhio.jpg){:class="img-responsive"}
 
 
 ### 女人的差异性
