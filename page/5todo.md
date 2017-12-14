@@ -55,7 +55,7 @@ type: page
 <i class="fa fa-check-square-o" aria-hidden="true"></i>  恋爱的犀牛 <br>
 <i class="fa fa-check-square-o" aria-hidden="true"></i>  明星版雷雨 <br>
 <i class="fa fa-square-o" aria-hidden="true"></i>  人艺版窝头会馆 <br>
-<i class="fa fa-square-o" aria-hidden="true"></i>  一个无政府主义者的意外死亡 <br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i>  一个无政府主义者的意外死亡 <br>
 
 # sport
 
