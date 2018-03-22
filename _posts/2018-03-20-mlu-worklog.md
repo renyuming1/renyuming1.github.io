@@ -13,7 +13,6 @@ author: yuming
 <img src="/assets/images/mlu/mlu_worklog_1.jpeg" width="1000px">
 
 
-
 ## 2018-03-18
 1. Finish Assign 3
 2. Start wroking with eider
@@ -27,7 +26,8 @@ author: yuming
 2. Learning Pandas
 
 ## 2018-03-21
-
+1. Learn Matrix and Linear Algebra
+2. Learn general Probaility Distibution
 
 ## 2018-03-22
  
